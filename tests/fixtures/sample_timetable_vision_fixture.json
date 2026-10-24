@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {"branch": "AI", "semester": 5, "day": "TUE", "start_time": "10:00", "end_time": "11:00", "subject_code": "31243102", "faculty_codes": ["GH"], "batch": null, "room": "SH2", "raw_cell_text": "31243102 GH SH2"},
+    {"branch": "AI", "semester": 5, "day": "TUE", "start_time": "11:00", "end_time": "12:00", "subject_code": "31243101", "faculty_codes": ["MC"], "batch": null, "room": "SH2", "raw_cell_text": "31243101 MC SH2"},
+    {"branch": "AI", "semester": 5, "day": "TUE", "start_time": "12:00", "end_time": "13:00", "subject_code": "31243104", "faculty_codes": ["NA"], "batch": null, "room": "SH2", "raw_cell_text": "31243104 NA SH2"},
+    {"branch": "AI", "semester": 5, "day": "TUE", "start_time": "14:00", "end_time": "16:00", "subject_code": "31243108", "faculty_codes": ["NA", "RES"], "batch": "A+B", "room": "M104", "raw_cell_text": "31243108 Batch A+B (NA+RES) M104"},
+    {"branch": "AI", "semester": 5, "day": "TUE", "start_time": "16:00", "end_time": "17:00", "subject_code": "31243103", "faculty_codes": ["HSP"], "batch": null, "room": "M202", "raw_cell_text": "31243103 HSP M202"},
+
+    {"branch": "AI", "semester": 5, "day": "WED", "start_time": "10:00", "end_time": "11:00", "subject_code": "31243102", "faculty_codes": ["GH"], "batch": null, "room": "M104", "raw_cell_text": "31243102 GH M104"},
+    {"branch": "AI", "semester": 5, "day": "WED", "start_time": "11:00", "end_time": "13:00", "subject_code": "31243106", "faculty_codes": ["GH", "RS"], "batch": "A+B", "room": "M104", "raw_cell_text": "31243106 Batch A+B (GH+RS) M104"},
+    {"branch": "AI", "semester": 5, "day": "WED", "start_time": "14:00", "end_time": "16:00", "subject_code": "31243105", "faculty_codes": ["MC", "HSP"], "batch": "A+B", "room": "M301", "raw_cell_text": "31243105 Batch A+B (MC + HSP) M301"},
+    {"branch": "AI", "semester": 5, "day": "WED", "start_time": "16:00", "end_time": "17:00", "subject_code": "31243104", "faculty_codes": ["NA"], "batch": null, "room": "SH2", "raw_cell_text": "31243104 NA SH2"},
+
+    {"branch": "AI", "semester": 5, "day": "THU", "start_time": "11:00", "end_time": "12:00", "subject_code": "31243101", "faculty_codes": ["MC"], "batch": null, "room": "SH2", "raw_cell_text": "31243101 MC SH2"},
+    {"branch": "AI", "semester": 5, "day": "THU", "start_time": "12:00", "end_time": "13:00", "subject_code": "31243103", "faculty_codes": ["HSP"], "batch": null, "room": "SH2", "raw_cell_text": "31243103 HSP SH2"},
+    {"branch": "AI", "semester": 5, "day": "THU", "start_time": "14:00", "end_time": "16:00", "subject_code": "31243110", "faculty_codes": ["NH"], "batch": null, "room": "SH2", "raw_cell_text": "31243110 NH SH2"},
+    {"branch": "AI", "semester": 5, "day": "THU", "start_time": "16:00", "end_time": "17:00", "subject_code": "31243102", "faculty_codes": ["GH"], "batch": null, "room": "SH2", "raw_cell_text": "31243102 GH SH2"},
+
+    {"branch": "AI", "semester": 5, "day": "FRI", "start_time": "11:00", "end_time": "12:00", "subject_code": "31243101", "faculty_codes": ["MC"], "batch": null, "room": "J109", "raw_cell_text": "31243101 MC J109"},
+    {"branch": "AI", "semester": 5, "day": "FRI", "start_time": "12:00", "end_time": "13:00", "subject_code": "31243104", "faculty_codes": ["NA"], "batch": null, "room": "J109", "raw_cell_text": "31243104 NA J109"},
+    {"branch": "AI", "semester": 5, "day": "FRI", "start_time": "14:00", "end_time": "15:00", "subject_code": "31243109", "faculty_codes": ["AS"], "batch": null, "room": "SH2", "raw_cell_text": "31243109 AS SH2"},
+    {"branch": "AI", "semester": 5, "day": "FRI", "start_time": "15:00", "end_time": "16:00", "subject_code": "31243109", "faculty_codes": ["AS"], "batch": null, "room": "SH2", "raw_cell_text": "31243109 AS SH2"},
+    {"branch": "AI", "semester": 5, "day": "FRI", "start_time": "16:00", "end_time": "17:00", "subject_code": "31243103", "faculty_codes": ["HSP"], "batch": null, "room": "SH2", "raw_cell_text": "31243103 HSP SH2"},
+
+    {"branch": "AI", "semester": 5, "day": "SAT", "start_time": "14:00", "end_time": "15:00", "subject_code": "31243107", "faculty_codes": ["AS"], "batch": null, "room": "M201", "raw_cell_text": "31243107 AS M201"},
+    {"branch": "AI", "semester": 5, "day": "MON", "start_time": "14:00", "end_time": "16:00", "subject_code": "DE-1", "faculty_codes": [], "batch": null, "room": "Online", "raw_cell_text": "DE-1 Mentoring - Online"},
+
+    {"branch": "AIR", "semester": 5, "day": "TUE", "start_time": "10:00", "end_time": "11:00", "subject_code": "24243103", "faculty_codes": ["PD"], "batch": null, "room": "J110", "raw_cell_text": "24243103 PD J110"},
+    {"branch": "AIR", "semester": 5, "day": "TUE", "start_time": "11:00", "end_time": "12:00", "subject_code": "24243109", "faculty_codes": ["PD"], "batch": null, "room": "J110", "raw_cell_text": "24243109 PD J110"},
+    {"branch": "AIR", "semester": 5, "day": "TUE", "start_time": "12:00", "end_time": "13:00", "subject_code": "24243101", "faculty_codes": ["BSR"], "batch": null, "room": "J110", "raw_cell_text": "24243101 BSR J110"},
+
+    {"branch": "AIR", "semester": 5, "day": "WED", "start_time": "10:00", "end_time": "11:00", "subject_code": "24243101", "faculty_codes": ["BSR"], "batch": null, "room": "J110", "raw_cell_text": "24243101 BSR J110"},
+    {"branch": "AIR", "semester": 5, "day": "WED", "start_time": "11:00", "end_time": "12:00", "subject_code": "24243104", "faculty_codes": ["RST"], "batch": null, "room": "J110", "raw_cell_text": "24243104 RST J110"},
+    {"branch": "AIR", "semester": 5, "day": "WED", "start_time": "12:00", "end_time": "13:00", "subject_code": "24243102", "faculty_codes": ["NM"], "batch": null, "room": "J110", "raw_cell_text": "24243102 NM J110"},
+
+    {"branch": "AIR", "semester": 5, "day": "THU", "start_time": "10:00", "end_time": "12:00", "subject_code": "24243110", "faculty_codes": ["VSS"], "batch": null, "room": "J110", "raw_cell_text": "24243110 VSS J110"},
+    {"branch": "AIR", "semester": 5, "day": "THU", "start_time": "12:00", "end_time": "13:00", "subject_code": "24243102", "faculty_codes": ["NM"], "batch": null, "room": "J110", "raw_cell_text": "24243102 NM J110"},
+    {"branch": "AIR", "semester": 5, "day": "THU", "start_time": "14:00", "end_time": "15:00", "subject_code": "24243103", "faculty_codes": ["PD"], "batch": null, "room": "J110", "raw_cell_text": "24243103 PD J110"},
+    {"branch": "AIR", "semester": 5, "day": "THU", "start_time": "15:00", "end_time": "16:00", "subject_code": "24243104", "faculty_codes": ["SKS"], "batch": null, "room": "J110", "raw_cell_text": "24243104 SKS J110"},
+    {"branch": "AIR", "semester": 5, "day": "THU", "start_time": "16:00", "end_time": "18:00", "subject_code": "24243105", "faculty_codes": ["PD", "NM"], "batch": "A+B", "room": "M104", "raw_cell_text": "24243105 Batch A+B (PD+NM) M104"},
+
+    {"branch": "AIR", "semester": 5, "day": "FRI", "start_time": "11:00", "end_time": "12:00", "subject_code": "24243101", "faculty_codes": ["BSR"], "batch": null, "room": "J110", "raw_cell_text": "24243101 BSR J110"},
+    {"branch": "AIR", "semester": 5, "day": "FRI", "start_time": "12:00", "end_time": "13:00", "subject_code": "24243102", "faculty_codes": ["NM"], "batch": null, "room": "J110", "raw_cell_text": "24243102 NM J110"},
+    {"branch": "AIR", "semester": 5, "day": "FRI", "start_time": "14:00", "end_time": "15:00", "subject_code": "24243103", "faculty_codes": ["PD"], "batch": null, "room": "J110", "raw_cell_text": "24243103 PD J110"},
+    {"branch": "AIR", "semester": 5, "day": "FRI", "start_time": "15:00", "end_time": "16:00", "subject_code": "24243104", "faculty_codes": ["SKS"], "batch": null, "room": "J110", "raw_cell_text": "24243104 SKS J110"},
+
+    {"branch": "AIR", "semester": 5, "day": "SAT", "start_time": "11:00", "end_time": "13:00", "subject_code": "24243106", "faculty_codes": ["NM", "PD"], "batch": "A+B", "room": "IoT Lab", "raw_cell_text": "24243106 Batch A+B (NM+PD) IoT Lab"},
+    {"branch": "AIR", "semester": 5, "day": "SAT", "start_time": "14:00", "end_time": "16:00", "subject_code": "24243108", "faculty_codes": ["RST", "PT"], "batch": "A+B", "room": "M301", "raw_cell_text": "24243108 Batch A+B (RST+PT) M301"},
+    {"branch": "AIR", "semester": 5, "day": "SAT", "start_time": "16:00", "end_time": "17:00", "subject_code": "24243107", "faculty_codes": ["MS"], "batch": null, "room": "J110", "raw_cell_text": "24243107 MS J110"},
+    {"branch": "AIR", "semester": 5, "day": "MON", "start_time": "14:00", "end_time": "16:00", "subject_code": "DE-1", "faculty_codes": [], "batch": null, "room": "Online", "raw_cell_text": "DE-1 Mentoring - Online"},
+
+    {"branch": "AI&DS", "semester": 5, "day": "TUE", "start_time": "12:00", "end_time": "13:00", "subject_code": "27243102", "faculty_codes": ["GH"], "batch": null, "room": "J109", "raw_cell_text": "27243102 GH J109"},
+    {"branch": "AI&DS", "semester": 5, "day": "TUE", "start_time": "14:00", "end_time": "15:00", "subject_code": "27243103", "faculty_codes": ["AB"], "batch": null, "room": "SH2", "raw_cell_text": "27243103 AB SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "TUE", "start_time": "15:00", "end_time": "16:00", "subject_code": "27243101", "faculty_codes": ["SM"], "batch": null, "room": "SH2", "raw_cell_text": "27243101 SM SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "TUE", "start_time": "16:00", "end_time": "18:00", "subject_code": "27243106", "faculty_codes": ["GH", "RST"], "batch": "A+B", "room": "M104", "raw_cell_text": "27243106 Batch A+B (GH+RST) M104"},
+
+    {"branch": "AI&DS", "semester": 5, "day": "WED", "start_time": "14:00", "end_time": "15:00", "subject_code": "27243101", "faculty_codes": ["SM"], "batch": null, "room": "SH2", "raw_cell_text": "27243101 SM SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "WED", "start_time": "15:00", "end_time": "16:00", "subject_code": "27243103", "faculty_codes": ["AB"], "batch": null, "room": "SH2", "raw_cell_text": "27243103 AB SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "WED", "start_time": "16:00", "end_time": "18:00", "subject_code": "27243105", "faculty_codes": ["SM", "PT"], "batch": "A+B", "room": "M301", "raw_cell_text": "27243105 Batch A+B (SM+PT) M301"},
+
+    {"branch": "AI&DS", "semester": 5, "day": "THU", "start_time": "12:00", "end_time": "13:00", "subject_code": "27243104", "faculty_codes": ["MC"], "batch": null, "room": "J109", "raw_cell_text": "27243104 MC J109"},
+    {"branch": "AI&DS", "semester": 5, "day": "THU", "start_time": "14:00", "end_time": "15:00", "subject_code": "27243101", "faculty_codes": ["SM"], "batch": null, "room": "M201", "raw_cell_text": "27243101 SM M201"},
+    {"branch": "AI&DS", "semester": 5, "day": "THU", "start_time": "15:00", "end_time": "16:00", "subject_code": "27243103", "faculty_codes": ["AB"], "batch": null, "room": "M201", "raw_cell_text": "27243103 AB M201"},
+    {"branch": "AI&DS", "semester": 5, "day": "THU", "start_time": "16:00", "end_time": "18:00", "subject_code": "27243108", "faculty_codes": ["MC", "HSP"], "batch": "A+B", "room": "M203", "raw_cell_text": "27243108 Batch A+B (MC+HSP) M203"},
+
+    {"branch": "AI&DS", "semester": 5, "day": "FRI", "start_time": "11:00", "end_time": "12:00", "subject_code": "27243104", "faculty_codes": ["MC"], "batch": null, "room": "SH2", "raw_cell_text": "27243104 MC SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "FRI", "start_time": "12:00", "end_time": "13:00", "subject_code": "27243102", "faculty_codes": ["GH"], "batch": null, "room": "SH2", "raw_cell_text": "27243102 GH SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "FRI", "start_time": "14:00", "end_time": "16:00", "subject_code": "27243110", "faculty_codes": ["VSS"], "batch": null, "room": "Arch-Library", "raw_cell_text": "27243110 VSS Arch-Library"},
+    {"branch": "AI&DS", "semester": 5, "day": "FRI", "start_time": "16:00", "end_time": "17:00", "subject_code": "27243109", "faculty_codes": ["SO"], "batch": null, "room": "Arch-Library", "raw_cell_text": "27243109 SO Arch-Library"},
+
+    {"branch": "AI&DS", "semester": 5, "day": "SAT", "start_time": "11:00", "end_time": "12:00", "subject_code": "27243102", "faculty_codes": ["GH"], "batch": null, "room": "SH2", "raw_cell_text": "27243102 GH SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "SAT", "start_time": "12:00", "end_time": "13:00", "subject_code": "27243104", "faculty_codes": ["MC"], "batch": null, "room": "SH2", "raw_cell_text": "27243104 MC SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "SAT", "start_time": "14:00", "end_time": "15:00", "subject_code": "27243107", "faculty_codes": ["VSS"], "batch": null, "room": "SH2", "raw_cell_text": "27243107 VSS SH2"},
+    {"branch": "AI&DS", "semester": 5, "day": "MON", "start_time": "14:00", "end_time": "16:00", "subject_code": "DE-1", "faculty_codes": [], "batch": null, "room": "Online", "raw_cell_text": "DE-1 Mentoring - Online"},
+
+    {"branch": "AIML", "semester": 5, "day": "TUE", "start_time": "10:00", "end_time": "11:00", "subject_code": "28243104", "faculty_codes": ["TS"], "batch": null, "room": "M104", "raw_cell_text": "28243104 TS M104"},
+    {"branch": "AIML", "semester": 5, "day": "TUE", "start_time": "11:00", "end_time": "13:00", "subject_code": "28243108", "faculty_codes": ["TS", "HSP"], "batch": "B", "room": "M104", "raw_cell_text": "28243108 Batch B (TS+HSP) M104"},
+    {"branch": "AIML", "semester": 5, "day": "TUE", "start_time": "14:00", "end_time": "15:00", "subject_code": "28243101", "faculty_codes": ["MC"], "batch": null, "room": "J109", "raw_cell_text": "28243101 MC J109"},
+    {"branch": "AIML", "semester": 5, "day": "TUE", "start_time": "15:00", "end_time": "16:00", "subject_code": "28243102", "faculty_codes": ["AA"], "batch": null, "room": "J109", "raw_cell_text": "28243102 AA J109"},
+
+    {"branch": "AIML", "semester": 5, "day": "WED", "start_time": "10:00", "end_time": "11:00", "subject_code": "28243103", "faculty_codes": ["HSP"], "batch": null, "room": "M301", "raw_cell_text": "28243103 HSP M301"},
+    {"branch": "AIML", "semester": 5, "day": "WED", "start_time": "11:00", "end_time": "13:00", "subject_code": "28243105", "faculty_codes": ["MC", "NA"], "batch": "A+B", "room": "M301", "raw_cell_text": "28243105 Batch A+B (MC+NA) M301"},
+    {"branch": "AIML", "semester": 5, "day": "WED", "start_time": "14:00", "end_time": "15:00", "subject_code": "28243102", "faculty_codes": ["AA"], "batch": null, "room": "J109", "raw_cell_text": "28243102 AA J109"},
+    {"branch": "AIML", "semester": 5, "day": "WED", "start_time": "15:00", "end_time": "17:00", "subject_code": "28243107", "faculty_codes": ["AA"], "batch": null, "room": "J109", "raw_cell_text": "28243107 AA J109"},
+    {"branch": "AIML", "semester": 5, "day": "WED", "start_time": "17:00", "end_time": "18:00", "subject_code": "28243101", "faculty_codes": ["MC"], "batch": null, "room": "J109", "raw_cell_text": "28243101 MC J109"},
+
+    {"branch": "AIML", "semester": 5, "day": "THU", "start_time": "10:00", "end_time": "12:00", "subject_code": "28243106", "faculty_codes": ["AA", "TS"], "batch": "A+B", "room": "M301", "raw_cell_text": "28243106 Batch A+B (AA+TS) M301"},
+    {"branch": "AIML", "semester": 5, "day": "THU", "start_time": "14:00", "end_time": "15:00", "subject_code": "28243101", "faculty_codes": ["MC"], "batch": null, "room": "J109", "raw_cell_text": "28243101 MC J109"},
+    {"branch": "AIML", "semester": 5, "day": "THU", "start_time": "15:00", "end_time": "16:00", "subject_code": "28243102", "faculty_codes": ["AA"], "batch": null, "room": "J109", "raw_cell_text": "28243102 AA J109"},
+    {"branch": "AIML", "semester": 5, "day": "THU", "start_time": "16:00", "end_time": "17:00", "subject_code": "28243110", "faculty_codes": ["NH"], "batch": null, "room": "J109", "raw_cell_text": "28243110 NH J109"},
+
+    {"branch": "AIML", "semester": 5, "day": "FRI", "start_time": "14:00", "end_time": "15:00", "subject_code": "28243103", "faculty_codes": ["HSP"], "batch": null, "room": "J109", "raw_cell_text": "28243103 HSP J109"},
+    {"branch": "AIML", "semester": 5, "day": "FRI", "start_time": "15:00", "end_time": "16:00", "subject_code": "28243104", "faculty_codes": ["TS"], "batch": null, "room": "J109", "raw_cell_text": "28243104 TS J109"},
+    {"branch": "AIML", "semester": 5, "day": "FRI", "start_time": "16:00", "end_time": "17:00", "subject_code": "28243109", "faculty_codes": ["VT"], "batch": null, "room": "J109", "raw_cell_text": "28243109 VT J109"},
+
+    {"branch": "AIML", "semester": 5, "day": "SAT", "start_time": "11:00", "end_time": "12:00", "subject_code": "28243104", "faculty_codes": ["TS"], "batch": null, "room": "J109", "raw_cell_text": "28243104 TS J109"},
+    {"branch": "AIML", "semester": 5, "day": "SAT", "start_time": "12:00", "end_time": "13:00", "subject_code": "28243103", "faculty_codes": ["HSP"], "batch": null, "room": "J109", "raw_cell_text": "28243103 HSP J109"},
+    {"branch": "AIML", "semester": 5, "day": "MON", "start_time": "14:00", "end_time": "16:00", "subject_code": "DE-1", "faculty_codes": [], "batch": null, "room": "Online", "raw_cell_text": "DE-1 Mentoring - Online"}
+  ]
+}

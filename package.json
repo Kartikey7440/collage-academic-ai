@@ -1,0 +1,14 @@
+{
+  "name": "mits-academic-ai-agent",
+  "version": "0.4.0",
+  "description": "MITS Gwalior Academic AI Agent API connected to Neon Postgres",
+  "scripts": {
+    "build": "python -m py_compile api/main.py api/config.py db/session.py db/queries.py",
+    "start": "uvicorn api.main:app --host 0.0.0.0 --port 8000",
+    "test": "pytest"
+  },
+  "dependencies": {
+    "@neon/config": "^1.9.2",
+    "@neon/env": "^1.6.3"
+  }
+}

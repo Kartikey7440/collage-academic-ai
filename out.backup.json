@@ -1,0 +1,1627 @@
+[
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31243102",
+    "subject_name": "Cloud Computing & Virtualization",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243102 GH SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31243101",
+    "subject_name": "Machine Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243101 MC SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31243104",
+    "subject_name": "Statistical Computing",
+    "faculty_codes": [
+      "NA"
+    ],
+    "faculty_names": [
+      "Dr. Neelam Arya"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243104 NA SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31243108",
+    "subject_name": "Statistical Computing Lab",
+    "faculty_codes": [
+      "NA",
+      "RES"
+    ],
+    "faculty_names": [
+      "Dr. Neelam Arya",
+      null
+    ],
+    "batch": "A+B",
+    "room": "M104",
+    "raw_cell_text": "31243108 Batch A+B (NA+RES) M104",
+    "needs_review": true,
+    "review_reason": "faculty code 'RES' not found in lookup table"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "31243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31243103 HSP M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31243102",
+    "subject_name": "Cloud Computing & Virtualization",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "M104",
+    "raw_cell_text": "31243102 GH M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "31243106",
+    "subject_name": "Cloud Computing & Virtualization Lab",
+    "faculty_codes": [
+      "GH",
+      "RS"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra",
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": "A+B",
+    "room": "M104",
+    "raw_cell_text": "31243106 Batch A+B (GH+RS) M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31243105",
+    "subject_name": "Machine Learning Lab",
+    "faculty_codes": [
+      "MC",
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey",
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": "A+B",
+    "room": "M301",
+    "raw_cell_text": "31243105 Batch A+B (MC + HSP) M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "31243104",
+    "subject_name": "Statistical Computing",
+    "faculty_codes": [
+      "NA"
+    ],
+    "faculty_names": [
+      "Dr. Neelam Arya"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243104 NA SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31243101",
+    "subject_name": "Machine Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243101 MC SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243103 HSP SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31243110",
+    "subject_name": "Supply Chain Management",
+    "faculty_codes": [
+      "NH"
+    ],
+    "faculty_names": [
+      "Dr. Nidhi Humnekar"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243110 NH SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "31243102",
+    "subject_name": "Cloud Computing & Virtualization",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243102 GH SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31243101",
+    "subject_name": "Machine Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "31243101 MC J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31243104",
+    "subject_name": "Statistical Computing",
+    "faculty_codes": [
+      "NA"
+    ],
+    "faculty_names": [
+      "Dr. Neelam Arya"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "31243104 NA J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31243109",
+    "subject_name": "Cornerstone Project",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243109 AS SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "31243109",
+    "subject_name": "Cornerstone Project",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243109 AS SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "31243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "31243103 HSP SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31243107",
+    "subject_name": "Semester Proficiency$",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "31243107 AS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 5,
+    "day": "MON",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "DE-1",
+    "subject_name": null,
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": "Online",
+    "raw_cell_text": "DE-1 Mentoring - Online",
+    "needs_review": true,
+    "review_reason": "subject code 'DE-1' not found in lookup table"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24243103",
+    "subject_name": "Robot Operating System",
+    "faculty_codes": [
+      "PD"
+    ],
+    "faculty_names": [
+      "Dr. Pawan Dubey"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243103 PD J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24243109",
+    "subject_name": "Cornerstone Project",
+    "faculty_codes": [
+      "PD"
+    ],
+    "faculty_names": [
+      "Dr. Pawan Dubey"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243109 PD J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24243101",
+    "subject_name": "Theory of Computation",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243101 BSR J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24243101",
+    "subject_name": "Theory of Computation",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243101 BSR J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24243104",
+    "subject_name": "Data Science",
+    "faculty_codes": [
+      "RST"
+    ],
+    "faculty_names": [
+      "Mr. Rahul Senthiya"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243104 RST J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24243102",
+    "subject_name": "Internet of Things",
+    "faculty_codes": [
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243102 NM J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "subject_code": "24243110",
+    "subject_name": "Supply Chain Management",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243110 VSS J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24243102",
+    "subject_name": "Internet of Things",
+    "faculty_codes": [
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243102 NM J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "24243103",
+    "subject_name": "Robot Operating System",
+    "faculty_codes": [
+      "PD"
+    ],
+    "faculty_names": [
+      "Dr. Pawan Dubey"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243103 PD J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "24243104",
+    "subject_name": "Data Science",
+    "faculty_codes": [
+      "SKS"
+    ],
+    "faculty_names": [
+      "Dr. Sunil Kumar Shukla"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243104 SKS J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "24243105",
+    "subject_name": "Robot Operating System Lab",
+    "faculty_codes": [
+      "PD",
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Pawan Dubey",
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": "A+B",
+    "room": "M104",
+    "raw_cell_text": "24243105 Batch A+B (PD+NM) M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24243101",
+    "subject_name": "Theory of Computation",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243101 BSR J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24243102",
+    "subject_name": "Internet of Things",
+    "faculty_codes": [
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243102 NM J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "24243103",
+    "subject_name": "Robot Operating System",
+    "faculty_codes": [
+      "PD"
+    ],
+    "faculty_names": [
+      "Dr. Pawan Dubey"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243103 PD J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "24243104",
+    "subject_name": "Data Science",
+    "faculty_codes": [
+      "SKS"
+    ],
+    "faculty_names": [
+      "Dr. Sunil Kumar Shukla"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243104 SKS J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "24243106",
+    "subject_name": "Internet of Things Lab",
+    "faculty_codes": [
+      "NM",
+      "PD"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra",
+      "Dr. Pawan Dubey"
+    ],
+    "batch": "A+B",
+    "room": "IoT Lab",
+    "raw_cell_text": "24243106 Batch A+B (NM+PD) IoT Lab",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "24243108",
+    "subject_name": "Data Science Lab",
+    "faculty_codes": [
+      "RST",
+      "PT"
+    ],
+    "faculty_names": [
+      "Mr. Rahul Senthiya",
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": "A+B",
+    "room": "M301",
+    "raw_cell_text": "24243108 Batch A+B (RST+PT) M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "24243107",
+    "subject_name": "Semester Proficiency$",
+    "faculty_codes": [
+      "MS"
+    ],
+    "faculty_names": [
+      "Dr. Mehuli Santra"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "24243107 MS J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 5,
+    "day": "MON",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "DE-1",
+    "subject_name": null,
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": "Online",
+    "raw_cell_text": "DE-1 Mentoring - Online",
+    "needs_review": true,
+    "review_reason": "subject code 'DE-1' not found in lookup table"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27243102",
+    "subject_name": "Cloud Computing & Virtualization",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "27243102 GH J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "27243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "AB"
+    ],
+    "faculty_names": [
+      "Dr. Abhishek Bhatt"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243103 AB SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "27243101",
+    "subject_name": "Data Mining and Warehousing",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243101 SM SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "27243106",
+    "subject_name": "Cloud Computing & Virtualization Lab",
+    "faculty_codes": [
+      "GH",
+      "RST"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra",
+      "Mr. Rahul Senthiya"
+    ],
+    "batch": "A+B",
+    "room": "M104",
+    "raw_cell_text": "27243106 Batch A+B (GH+RST) M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "27243101",
+    "subject_name": "Data Mining and Warehousing",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243101 SM SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "27243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "AB"
+    ],
+    "faculty_names": [
+      "Dr. Abhishek Bhatt"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243103 AB SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "27243105",
+    "subject_name": "Data Mining and Warehousing Lab",
+    "faculty_codes": [
+      "SM",
+      "PT"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra",
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": "A+B",
+    "room": "M301",
+    "raw_cell_text": "27243105 Batch A+B (SM+PT) M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27243104",
+    "subject_name": "Machine Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "27243104 MC J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "27243101",
+    "subject_name": "Data Mining and Warehousing",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "27243101 SM M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "27243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "AB"
+    ],
+    "faculty_names": [
+      "Dr. Abhishek Bhatt"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "27243103 AB M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "27243108",
+    "subject_name": "Machine Learning Lab",
+    "faculty_codes": [
+      "MC",
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey",
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "27243108 Batch A+B (MC+HSP) M203",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "27243104",
+    "subject_name": "Machine Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243104 MC SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27243102",
+    "subject_name": "Cloud Computing & Virtualization",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243102 GH SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "27243110",
+    "subject_name": "Supply Chain Management",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27243110 VSS Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "27243109",
+    "subject_name": "Cornerstone Project",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27243109 SO Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "27243102",
+    "subject_name": "Cloud Computing & Virtualization",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243102 GH SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27243104",
+    "subject_name": "Machine Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243104 MC SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "27243107",
+    "subject_name": "Semester Proficiency$",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "SH2",
+    "raw_cell_text": "27243107 VSS SH2",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI&DS",
+    "semester": 5,
+    "day": "MON",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "DE-1",
+    "subject_name": null,
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": "Online",
+    "raw_cell_text": "DE-1 Mentoring - Online",
+    "needs_review": true,
+    "review_reason": "subject code 'DE-1' not found in lookup table"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "28243104",
+    "subject_name": "Image Processing",
+    "faculty_codes": [
+      "TS"
+    ],
+    "faculty_names": [
+      "Dr. Tej Singh"
+    ],
+    "batch": null,
+    "room": "M104",
+    "raw_cell_text": "28243104 TS M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "28243108",
+    "subject_name": "Image Processing Lab",
+    "faculty_codes": [
+      "TS",
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Tej Singh",
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": "B",
+    "room": "M104",
+    "raw_cell_text": "28243108 Batch B (TS+HSP) M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "28243101",
+    "subject_name": "Deep Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243101 MC J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "TUE",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "28243102",
+    "subject_name": "Cloud Computing & Big Data",
+    "faculty_codes": [
+      "AA"
+    ],
+    "faculty_names": [
+      "Ms. Archana Acharya"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243102 AA J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "28243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "M301",
+    "raw_cell_text": "28243103 HSP M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "28243105",
+    "subject_name": "Deep Learning Lab",
+    "faculty_codes": [
+      "MC",
+      "NA"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey",
+      "Dr. Neelam Arya"
+    ],
+    "batch": "A+B",
+    "room": "M301",
+    "raw_cell_text": "28243105 Batch A+B (MC+NA) M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "28243102",
+    "subject_name": "Cloud Computing & Big Data",
+    "faculty_codes": [
+      "AA"
+    ],
+    "faculty_names": [
+      "Ms. Archana Acharya"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243102 AA J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "15:00",
+    "end_time": "17:00",
+    "subject_code": "28243107",
+    "subject_name": "Semester Proficiency$",
+    "faculty_codes": [
+      "AA"
+    ],
+    "faculty_names": [
+      "Ms. Archana Acharya"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243107 AA J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "WED",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "subject_code": "28243101",
+    "subject_name": "Deep Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243101 MC J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "subject_code": "28243106",
+    "subject_name": "Cloud Computing & Big Data Lab",
+    "faculty_codes": [
+      "AA",
+      "TS"
+    ],
+    "faculty_names": [
+      "Ms. Archana Acharya",
+      "Dr. Tej Singh"
+    ],
+    "batch": "A+B",
+    "room": "M301",
+    "raw_cell_text": "28243106 Batch A+B (AA+TS) M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "28243101",
+    "subject_name": "Deep Learning",
+    "faculty_codes": [
+      "MC"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243101 MC J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "28243102",
+    "subject_name": "Cloud Computing & Big Data",
+    "faculty_codes": [
+      "AA"
+    ],
+    "faculty_names": [
+      "Ms. Archana Acharya"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243102 AA J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "28243110",
+    "subject_name": "Supply Chain Management",
+    "faculty_codes": [
+      "NH"
+    ],
+    "faculty_names": [
+      "Dr. Nidhi Humnekar"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243110 NH J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "28243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243103 HSP J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "28243104",
+    "subject_name": "Image Processing",
+    "faculty_codes": [
+      "TS"
+    ],
+    "faculty_names": [
+      "Dr. Tej Singh"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243104 TS J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "FRI",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "28243109",
+    "subject_name": "Cornerstone Project",
+    "faculty_codes": [
+      "VT"
+    ],
+    "faculty_names": [
+      "Dr. Vibha Tiwari"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243109 VT J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "28243104",
+    "subject_name": "Image Processing",
+    "faculty_codes": [
+      "TS"
+    ],
+    "faculty_names": [
+      "Dr. Tej Singh"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243104 TS J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "SAT",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "28243103",
+    "subject_name": "Evolutionary Algorithms and Optimization",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "J109",
+    "raw_cell_text": "28243103 HSP J109",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 5,
+    "day": "MON",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "DE-1",
+    "subject_name": null,
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": "Online",
+    "raw_cell_text": "DE-1 Mentoring - Online",
+    "needs_review": true,
+    "review_reason": "subject code 'DE-1' not found in lookup table"
+  }
+]
