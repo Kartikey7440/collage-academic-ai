@@ -317,7 +317,7 @@ def client():
 
 class TestTimetableDayEndpoint:
     def test_student_gets_monday_classes(self, client, student_token, tt_slot, tt_slot_review):
-        """Student sees their confirmed (non-review) Monday slot."""
+        """Student sees both confirmed and needs_review Monday slots."""
         resp = client.get(
             "/api/v1/timetable/day/0",
             headers={"Authorization": f"Bearer {student_token}"},
@@ -329,10 +329,8 @@ class TestTimetableDayEndpoint:
 
         # The confirmed slot must appear
         assert tt_slot.id in slot_ids
-        # The needs_review slot must be hidden from students
-        assert tt_slot_review.id not in slot_ids, (
-            "needs_review=True slot must not be returned to students"
-        )
+        # Students now SEE needs_review slots (needs_review=true in response)
+        assert tt_slot_review.id in slot_ids
 
         # Validate shape of the confirmed slot
         found = next(s for s in slots if s["id"] == tt_slot.id)
@@ -345,6 +343,9 @@ class TestTimetableDayEndpoint:
         assert found["subject"]["code"] == "TT-SUB"
         assert len(found["faculty"]) == 1
         assert found["faculty"][0]["code"] == "TT-FAC"
+
+        found_rev = next(s for s in slots if s["id"] == tt_slot_review.id)
+        assert found_rev["needs_review"] is True
 
     def test_admin_sees_needs_review_slot(self, client, admin_token, tt_branch, tt_slot, tt_slot_review):
         """Admin sees ALL slots including needs_review=True ones."""
@@ -461,11 +462,9 @@ class TestNextClassEndpoint:
         assert resp.status_code == 200
         body = resp.json()
         assert body is None or isinstance(body, dict)
-        # If a slot is returned, it must not be a needs_review slot
+        # If a slot is returned, it has needs_review boolean
         if body is not None:
-            assert body["needs_review"] is False, (
-                "Student must never receive a needs_review slot from next-class"
-            )
+            assert isinstance(body["needs_review"], bool)
 
     def test_faculty_next_class_succeeds(self, client, faculty_token):
         """Faculty can call next-class; returns null or a slot (never 400)."""
