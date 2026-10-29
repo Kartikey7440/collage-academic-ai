@@ -96,8 +96,9 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
-from api.routers import auth, chat, timetable
+from api.routers import admin, auth, chat, timetable
 
 
 # ---------------------------------------------------------------------------
@@ -152,6 +153,10 @@ def create_app() -> FastAPI:
     application.include_router(auth.router, prefix="/api/v1")
     application.include_router(timetable.router, prefix="/api/v1")
     application.include_router(chat.router, prefix="/api/v1")
+    application.include_router(admin.router, prefix="/api/v1")
+
+    # Static pages served at /app/
+    application.mount("/app", StaticFiles(directory="static", html=True), name="static")
 
     @application.get("/health", tags=["meta"], summary="Health check")
     async def health():

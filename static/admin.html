@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MITS Timetable Admin Review</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3f5fa; --panel: #ffffff; --text: #1c2130; --muted: #667085;
+    --brand: #1f3864; --brand-text: #ffffff; --border: #d9dde7;
+    --warn: #b54708; --danger: #b42318; --success: #027a48;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151c; --panel: #1b1f2a; --text: #e8eaf0; --muted: #9aa3b5;
+      --brand: #5b8def; --brand-text: #0b1020; --border: #313849;
+      --warn: #f79009; --danger: #f97066; --success: #32d583;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; }
+  .hidden { display: none !important; }
+  #login { min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .card { width: 100%; max-width: 380px; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+  .card h1 { font-size: 1.2rem; margin: 0 0 4px; }
+  .card p { margin: 0 0 16px; color: var(--muted); font-size: 0.85rem; }
+  label { display: block; font-size: 0.8rem; margin: 10px 0 4px; color: var(--muted); }
+  input[type=email], input[type=password], input[type=text] { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit; }
+  input:focus { outline: 2px solid var(--brand); }
+  button.primary { padding: 8px 12px; border: 0; border-radius: 8px; background: var(--brand); color: var(--brand-text); font: inherit; font-weight: 600; cursor: pointer; }
+  button.primary:disabled { opacity: 0.6; cursor: default; }
+  .error { color: var(--danger); font-size: 0.85rem; margin-top: 10px; }
+  .banner { padding: 10px 14px; margin: 12px 0; border-radius: 8px; font-size: 0.85rem; }
+  .banner.ok { background: rgba(2, 122, 72, 0.15); color: var(--success); }
+  .banner.err { background: rgba(180, 35, 24, 0.15); color: var(--danger); }
+  #adminApp { max-width: 1300px; margin: 0 auto; padding: 16px; }
+  header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 14px; }
+  header h2 { margin: 0; font-size: 1.2rem; }
+  header .sub { font-size: 0.8rem; color: var(--muted); }
+  header button { border: 1px solid var(--border); background: transparent; color: var(--text); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+  .table-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
+  table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.82rem; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { background: var(--bg); font-weight: 600; color: var(--muted); white-space: nowrap; }
+  .raw-text { font-family: monospace; font-size: 0.72rem; color: var(--muted); max-width: 170px; word-break: break-all; }
+</style>
+</head>
+<body>
+<noscript>This page needs JavaScript.</noscript>
+<section id="login">
+  <form class="card" id="loginForm">
+    <h1>Timetable Admin Review</h1>
+    <p>Sign in with an administrator account.</p>
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="username" required>
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="current-password" required>
+    <button class="primary" style="margin-top:14px; width:100%" id="loginBtn" type="submit">Sign in</button>
+    <div class="error" id="loginError" role="alert"></div>
+  </form>
+</section>
+<section id="adminApp" class="hidden">
+  <header>
+    <div><h2>Flagged Timetable Slots Review</h2><div class="sub" id="who">Admin queue</div></div>
+    <div style="display:flex; gap:8px;"><button id="refreshBtn" type="button">Refresh</button><button id="logoutBtn" type="button">Sign out</button></div>
+  </header>
+  <div id="notice" class="banner hidden"></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Branch</th><th>Sem</th><th>Day &amp; Time</th><th>Batch</th><th>Room</th><th>Subject</th><th>Raw OCR Text</th><th>Current Faculty</th><th>Fix Faculty</th><th>Action</th></tr></thead>
+      <tbody id="queueBody"></tbody>
+    </table>
+  </div>
+  <div id="emptyMsg" class="hidden" style="text-align:center; padding:24px; color:var(--muted)">No slots currently need review.</div>
+  <datalist id="facultyList"></datalist>
+</section>
+<script>
+"use strict";
+const API = "/api/v1";
+const state = { access: sessionStorage.getItem("access"), refresh: sessionStorage.getItem("refresh") };
+const $ = (id) => document.getElementById(id);
+function setTokens(a, r) { state.access = a; if (r) state.refresh = r; sessionStorage.setItem("access", a || ""); if (state.refresh) sessionStorage.setItem("refresh", state.refresh); }
+function clearTokens() { state.access = state.refresh = null; sessionStorage.removeItem("access"); sessionStorage.removeItem("refresh"); }
+async function refreshToken() {
+  if (!state.refresh) return false;
+  try {
+    const res = await fetch(API + "/auth/refresh", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ refresh_token: state.refresh }) });
+    if (!res.ok) return false;
+    const d = await res.json();
+    if (d.access_token) { setTokens(d.access_token, null); return true; }
+  } catch (e) {}
+  return false;
+}
+async function api(path, options = {}) {
+  const { method = "GET", body } = options;
+  const run = () => fetch(API + path, { method, headers: { "Content-Type": "application/json", ...(state.access ? { Authorization: "Bearer " + state.access } : {}) }, body: body ? JSON.stringify(body) : undefined });
+  let res = await run();
+  if (res.status === 401 && state.refresh && (await refreshToken())) res = await run();
+  return res;
+}
+function showNotice(msg, isErr) { const n = $("notice"); n.textContent = msg; n.className = "banner " + (isErr ? "err" : "ok"); n.classList.remove("hidden"); setTimeout(() => n.classList.add("hidden"), 5000); }
+function showLogin(msg) { $("adminApp").classList.add("hidden"); $("login").classList.remove("hidden"); $("loginError").textContent = msg || ""; $("password").value = ""; }
+async function loadFacultyDatalist() {
+  const res = await api("/admin/faculty");
+  if (!res.ok) return;
+  const list = await res.json(), dl = $("facultyList"); dl.textContent = "";
+  list.forEach(f => { const opt = document.createElement("option"); opt.value = f.code; opt.textContent = f.name; dl.appendChild(opt); });
+}
+async function loadQueue() {
+  const res = await api("/admin/review-queue");
+  if (res.status === 403) { showNotice("Access forbidden: an administrator account is required.", true); return; }
+  if (res.status === 401) { clearTokens(); showLogin("Session expired."); return; }
+  if (!res.ok) { showNotice("Failed to fetch review queue.", true); return; }
+  const data = await res.json(), tbody = $("queueBody"); tbody.textContent = "";
+  if (!data.items || data.items.length === 0) { $("emptyMsg").classList.remove("hidden"); return; }
+  $("emptyMsg").classList.add("hidden");
+  data.items.forEach(slot => {
+    const tr = document.createElement("tr"); tr.id = "slot-" + slot.id;
+    function addCell(txt, cls) { const td = document.createElement("td"); td.textContent = txt !== null && txt !== undefined ? String(txt) : "-"; if (cls) td.className = cls; tr.appendChild(td); return td; }
+    addCell(slot.branch_code || "-"); addCell(slot.semester || "-");
+    addCell((slot.day_name || "") + " " + (slot.start_time || "") + "-" + (slot.end_time || ""));
+    addCell(slot.batch || "-");
+    const roomTd = document.createElement("td"), roomInp = document.createElement("input");
+    roomInp.type = "text"; roomInp.value = slot.room || ""; roomInp.style.width = "70px"; roomTd.appendChild(roomInp); tr.appendChild(roomTd);
+    addCell(slot.subject ? slot.subject.code + ": " + slot.subject.name : "-");
+    addCell(slot.raw_cell_text || "-", "raw-text");
+    const curFac = (slot.faculty || []).map(f => f.code).join(", ");
+    addCell(curFac || "(none)");
+    const facTd = document.createElement("td"), facInp = document.createElement("input");
+    facInp.type = "text"; facInp.setAttribute("list", "facultyList"); facInp.placeholder = "e.g. NA, GH"; facInp.value = curFac; facInp.style.width = "100px"; facTd.appendChild(facInp); tr.appendChild(facTd);
+    const actTd = document.createElement("td"), btn = document.createElement("button");
+    btn.type = "button"; btn.className = "primary"; btn.textContent = "Save & confirm";
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      const codes = facInp.value.split(",").map(c => c.trim()).filter(Boolean);
+      try {
+        const patchRes = await api("/admin/slots/" + slot.id, { method: "PATCH", body: { faculty_codes: codes, room: roomInp.value.trim() || null, mark_reviewed: true } });
+        if (patchRes.status === 403) { showNotice("Forbidden: Administrator account required.", true); return; }
+        if (patchRes.status === 422) { const err = await patchRes.json(); showNotice(err.detail || "Validation error", true); return; }
+        if (!patchRes.ok) { showNotice("Failed to update slot #" + slot.id, true); return; }
+        tr.remove(); showNotice("Slot #" + slot.id + " updated and confirmed.", false);
+        if (tbody.children.length === 0) $("emptyMsg").classList.remove("hidden");
+      } catch (e) { showNotice("Network error.", true); }
+      finally { btn.disabled = false; }
+    });
+    actTd.appendChild(btn); tr.appendChild(actTd); tbody.appendChild(tr);
+  });
+}
+$("loginForm").addEventListener("submit", async (e) => {
+  e.preventDefault(); $("loginBtn").disabled = true; $("loginError").textContent = "";
+  try {
+    const res = await fetch(API + "/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: $("email").value.trim(), password: $("password").value }) });
+    if (res.status === 401) { $("loginError").textContent = "Invalid credentials."; return; }
+    if (!res.ok) { $("loginError").textContent = "Login failed."; return; }
+    const d = await res.json(); setTokens(d.access_token, d.refresh_token); await initDashboard();
+  } catch (err) { $("loginError").textContent = "Could not connect to server."; }
+  finally { $("loginBtn").disabled = false; }
+});
+$("refreshBtn").addEventListener("click", () => loadQueue());
+$("logoutBtn").addEventListener("click", () => { clearTokens(); showLogin(""); });
+async function initDashboard() {
+  const meRes = await api("/auth/me");
+  if (!meRes.ok) { clearTokens(); showLogin("Session invalid."); return; }
+  const me = await meRes.json();
+  if (me.role !== "admin") { clearTokens(); showLogin("Access denied: " + me.email + " is not an administrator."); return; }
+  $("login").classList.add("hidden"); $("adminApp").classList.remove("hidden");
+  $("who").textContent = me.email + " (Administrator)";
+  await loadFacultyDatalist(); await loadQueue();
+}
+(async function() { if (state.access) await initDashboard(); else showLogin(""); })();
+</script>
+</body>
+</html>
