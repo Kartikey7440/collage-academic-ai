@@ -243,12 +243,27 @@ async def me(
     identity: ScopedIdentity = Depends(get_current_identity),
     db: AsyncSession = Depends(get_db),
 ) -> UserOut:
-    """Return basic user info.  Requires a valid access token."""
+    """Return basic user info and academic scope. Requires a valid access token."""
     result = await db.execute(select(User).where(User.id == identity.user_id))
     user: Optional[User] = result.scalars().first()
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found.")
-    return UserOut.model_validate(user)
+
+    branch_code: Optional[str] = None
+    if identity.branch_id is not None:
+        b_res = await db.execute(select(Branch.code).where(Branch.id == identity.branch_id))
+        branch_code = b_res.scalar()
+
+    return UserOut(
+        id=user.id,
+        email=user.email,
+        role=user.role.value,
+        branch_code=branch_code,
+        semester=identity.semester,
+        section=identity.section,
+        batch=identity.batch,
+        roll_no=identity.roll_no,
+    )
 
 
 # ---------------------------------------------------------------------------

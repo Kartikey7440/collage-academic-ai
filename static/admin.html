@@ -3,173 +3,800 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MITS Timetable Admin Review</title>
+<title>Admin Review &middot; MITS Smart Campus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    color-scheme: light dark;
-    --bg: #f3f5fa; --panel: #ffffff; --text: #1c2130; --muted: #667085;
-    --brand: #1f3864; --brand-text: #ffffff; --border: #d9dde7;
-    --warn: #b54708; --danger: #b42318; --success: #027a48;
+    --bg-base: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-surface-elevated: #ffffff;
+    --bg-subtle: #f1f5f9;
+    --border: #e2e8f0;
+    --border-strong: #cbd5e1;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-subtle: #eff6ff;
+    --primary-border: #bfdbfe;
+    --danger: #ef4444;
+    --danger-subtle: #fef2f2;
+    --success: #10b981;
+    --success-subtle: #ecfdf5;
+    --warning: #f59e0b;
+    --warning-subtle: #fffbeb;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #12151c; --panel: #1b1f2a; --text: #e8eaf0; --muted: #9aa3b5;
-      --brand: #5b8def; --brand-text: #0b1020; --border: #313849;
-      --warn: #f79009; --danger: #f97066; --success: #32d583;
-    }
+
+  [data-theme="dark"] {
+    --bg-base: #090d16;
+    --bg-surface: #0f172a;
+    --bg-surface-elevated: #1e293b;
+    --bg-subtle: #131c31;
+    --border: #1e293b;
+    --border-strong: #334155;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --primary: #3b82f6;
+    --primary-hover: #60a5fa;
+    --primary-subtle: rgba(59, 130, 246, 0.12);
+    --primary-border: rgba(59, 130, 246, 0.3);
+    --danger: #f87171;
+    --danger-subtle: rgba(239, 68, 68, 0.12);
+    --success: #34d399;
+    --success-subtle: rgba(16, 185, 129, 0.12);
+    --warning: #fbbf24;
+    --warning-subtle: rgba(245, 158, 11, 0.12);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
   }
-  * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
-  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--bg-base);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
   .hidden { display: none !important; }
-  #login { min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 24px; }
-  .card { width: 100%; max-width: 380px; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
-  .card h1 { font-size: 1.2rem; margin: 0 0 4px; }
-  .card p { margin: 0 0 16px; color: var(--muted); font-size: 0.85rem; }
-  label { display: block; font-size: 0.8rem; margin: 10px 0 4px; color: var(--muted); }
-  input[type=email], input[type=password], input[type=text] { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit; }
-  input:focus { outline: 2px solid var(--brand); }
-  button.primary { padding: 8px 12px; border: 0; border-radius: 8px; background: var(--brand); color: var(--brand-text); font: inherit; font-weight: 600; cursor: pointer; }
-  button.primary:disabled { opacity: 0.6; cursor: default; }
-  .error { color: var(--danger); font-size: 0.85rem; margin-top: 10px; }
-  .banner { padding: 10px 14px; margin: 12px 0; border-radius: 8px; font-size: 0.85rem; }
-  .banner.ok { background: rgba(2, 122, 72, 0.15); color: var(--success); }
-  .banner.err { background: rgba(180, 35, 24, 0.15); color: var(--danger); }
-  #adminApp { max-width: 1300px; margin: 0 auto; padding: 16px; }
-  header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 14px; }
-  header h2 { margin: 0; font-size: 1.2rem; }
-  header .sub { font-size: 0.8rem; color: var(--muted); }
-  header button { border: 1px solid var(--border); background: transparent; color: var(--text); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
-  .table-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
-  table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.82rem; }
-  th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
-  th { background: var(--bg); font-weight: 600; color: var(--muted); white-space: nowrap; }
-  .raw-text { font-family: monospace; font-size: 0.72rem; color: var(--muted); max-width: 170px; word-break: break-all; }
+
+  /* Login Screen */
+  #login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 32px;
+  }
+  .login-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .login-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .login-header h1 { font-size: 1.25rem; font-weight: 700; margin-bottom: 6px; }
+  .login-header p { color: var(--text-muted); font-size: 0.85rem; }
+
+  .form-group { margin-bottom: 16px; text-align: left; }
+  label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+  input[type="email"], input[type="password"], input[type="text"], select {
+    width: 100%;
+    padding: 9px 12px;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.85rem;
+    transition: all 0.15s ease;
+  }
+  input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-subtle);
+    background: var(--bg-surface);
+  }
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+  }
+  button.primary {
+    background: var(--primary);
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    padding: 9px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  button.primary:hover:not(:disabled) { background: var(--primary-hover); }
+  button.primary:disabled { opacity: 0.6; cursor: not-allowed; }
+  button.outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 7px 12px;
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+  button.outline:hover { background: var(--bg-subtle); color: var(--text-primary); border-color: var(--border-strong); }
+  button.success-btn {
+    background: var(--success);
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+  button.success-btn:hover:not(:disabled) { opacity: 0.9; }
+
+  /* App Shell */
+  #adminApp {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header.admin-header {
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .header-title { font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .badge-admin {
+    background: var(--warning-subtle);
+    color: var(--warning);
+    border: 1px solid var(--warning);
+    font-size: 0.68rem;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+
+  .user-badge {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+  }
+
+  main.admin-content {
+    flex: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .banner {
+    padding: 12px 16px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner.ok { background: var(--success-subtle); color: var(--success); border: 1px solid var(--success); }
+  .banner.err { background: var(--danger-subtle); color: var(--danger); border: 1px solid var(--danger); }
+
+  /* Controls Bar */
+  .toolbar {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .filters-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-wrap {
+    min-width: 240px;
+  }
+
+  /* Table */
+  .table-container {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  th {
+    background: var(--bg-subtle);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--bg-subtle); }
+
+  .pill {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+  .pill-branch { background: var(--primary-subtle); color: var(--primary); border: 1px solid var(--primary-border); }
+  .pill-sem { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border); }
+  .pill-batch { background: var(--warning-subtle); color: var(--warning); border: 1px solid rgba(245, 158, 11, 0.3); }
+
+  .raw-text {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    background: var(--bg-subtle);
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px dashed var(--border);
+    max-width: 180px;
+    word-break: break-all;
+    color: var(--text-muted);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--text-muted);
+  }
+  .empty-icon { font-size: 32px; margin-bottom: 8px; }
+
+  .stats-strip {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 12px 18px;
+    flex: 1;
+    min-width: 140px;
+    box-shadow: var(--shadow-sm);
+  }
+  .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 600; }
+  .stat-val { font-size: 1.4rem; font-weight: 700; margin-top: 2px; }
 </style>
 </head>
 <body>
-<noscript>This page needs JavaScript.</noscript>
+
+<!-- Login Section -->
 <section id="login">
-  <form class="card" id="loginForm">
-    <h1>Timetable Admin Review</h1>
-    <p>Sign in with an administrator account.</p>
-    <label for="email">Email</label>
-    <input id="email" type="email" autocomplete="username" required>
-    <label for="password">Password</label>
-    <input id="password" type="password" autocomplete="current-password" required>
-    <button class="primary" style="margin-top:14px; width:100%" id="loginBtn" type="submit">Sign in</button>
-    <div class="error" id="loginError" role="alert"></div>
+  <form class="login-card" id="loginForm">
+    <div class="login-header">
+      <div class="login-logo">&Delta;</div>
+      <h1>Admin Review Portal</h1>
+      <p>Sign in with an administrator account to resolve flagged timetable slots.</p>
+    </div>
+    <div class="form-group">
+      <label for="email">Admin Email</label>
+      <input id="email" type="email" placeholder="admin@mits.ac.in" autocomplete="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
+    </div>
+    <button class="primary" style="width: 100%; margin-top: 8px;" id="loginBtn" type="submit">
+      Sign In &rarr;
+    </button>
+    <div id="loginError" style="color: var(--danger); font-size: 0.82rem; margin-top: 12px; text-align: center;"></div>
   </form>
 </section>
+
+<!-- Admin Dashboard Section -->
 <section id="adminApp" class="hidden">
-  <header>
-    <div><h2>Flagged Timetable Slots Review</h2><div class="sub" id="who">Admin queue</div></div>
-    <div style="display:flex; gap:8px;"><button id="refreshBtn" type="button">Refresh</button><button id="logoutBtn" type="button">Sign out</button></div>
+  <header class="admin-header">
+    <div class="header-left">
+      <div class="header-title">
+        <span>&Delta; MITS Smart Campus</span>
+        <span class="badge-admin">Admin Review</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="user-badge" id="who">Admin</span>
+      <button class="outline" id="themeBtn" title="Toggle Theme">&#9790;</button>
+      <a href="/" style="text-decoration: none;"><button class="outline" type="button">&larr; Student Hub</button></a>
+      <button class="outline" id="refreshBtn" type="button">&#8635; Refresh</button>
+      <button class="outline" id="logoutBtn" type="button">Sign out</button>
+    </div>
   </header>
-  <div id="notice" class="banner hidden"></div>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Branch</th><th>Sem</th><th>Day &amp; Time</th><th>Batch</th><th>Room</th><th>Subject</th><th>Raw OCR Text</th><th>Current Faculty</th><th>Fix Faculty</th><th>Action</th></tr></thead>
-      <tbody id="queueBody"></tbody>
-    </table>
-  </div>
-  <div id="emptyMsg" class="hidden" style="text-align:center; padding:24px; color:var(--muted)">No slots currently need review.</div>
+
+  <main class="admin-content">
+    <div id="notice" class="banner hidden"></div>
+
+    <div class="stats-strip">
+      <div class="stat-card">
+        <div class="stat-label">Pending Review</div>
+        <div class="stat-val" id="statPending" style="color: var(--warning);">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Showing Filtered</div>
+        <div class="stat-val" id="statFiltered">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Pre-Resolved Faculty</div>
+        <div class="stat-val" id="statPreResolved" style="color: var(--success);">-</div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters-group">
+        <div class="search-wrap">
+          <input type="text" id="filterSearch" placeholder="Search subject, room, faculty, OCR...">
+        </div>
+        <div>
+          <select id="filterBranch">
+            <option value="ALL">All Branches</option>
+          </select>
+        </div>
+        <div>
+          <select id="filterSem">
+            <option value="ALL">All Semesters</option>
+            <option value="3">Semester 3</option>
+            <option value="5">Semester 5</option>
+          </select>
+        </div>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <button class="success-btn" id="bulkConfirmBtn" type="button" title="Confirm all displayed slots that have faculty assigned">
+          &check; Bulk Confirm All Filtered
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Branch</th>
+              <th>Sem</th>
+              <th>Day &amp; Time</th>
+              <th>Batch</th>
+              <th>Room</th>
+              <th>Subject</th>
+              <th>Raw OCR Text</th>
+              <th>Current Faculty</th>
+              <th>Fix Faculty</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="queueBody"></tbody>
+        </table>
+      </div>
+      <div id="emptyMsg" class="empty-state hidden">
+        <div class="empty-icon">&check;</div>
+        <h3>All Clear!</h3>
+        <p style="margin-top: 4px; font-size: 0.85rem;">No timetable slots match your current filter or require review.</p>
+      </div>
+    </div>
+  </main>
+
   <datalist id="facultyList"></datalist>
 </section>
+
 <script>
 "use strict";
 const API = "/api/v1";
-const state = { access: sessionStorage.getItem("access"), refresh: sessionStorage.getItem("refresh") };
+const state = {
+  access: sessionStorage.getItem("access"),
+  refresh: sessionStorage.getItem("refresh"),
+  slots: [],
+  filteredSlots: [],
+  theme: localStorage.getItem("mits_theme") || "light"
+};
+
 const $ = (id) => document.getElementById(id);
-function setTokens(a, r) { state.access = a; if (r) state.refresh = r; sessionStorage.setItem("access", a || ""); if (state.refresh) sessionStorage.setItem("refresh", state.refresh); }
-function clearTokens() { state.access = state.refresh = null; sessionStorage.removeItem("access"); sessionStorage.removeItem("refresh"); }
+
+function initTheme() {
+  document.documentElement.setAttribute("data-theme", state.theme);
+  $("themeBtn").textContent = state.theme === "dark" ? "☀️" : "🌙";
+}
+$("themeBtn").addEventListener("click", () => {
+  state.theme = state.theme === "dark" ? "light" : "dark";
+  localStorage.setItem("mits_theme", state.theme);
+  initTheme();
+});
+initTheme();
+
+function setTokens(a, r) {
+  state.access = a;
+  if (r) state.refresh = r;
+  sessionStorage.setItem("access", a || "");
+  if (state.refresh) sessionStorage.setItem("refresh", state.refresh);
+}
+
+function clearTokens() {
+  state.access = state.refresh = null;
+  sessionStorage.removeItem("access");
+  sessionStorage.removeItem("refresh");
+}
+
 async function refreshToken() {
   if (!state.refresh) return false;
   try {
-    const res = await fetch(API + "/auth/refresh", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ refresh_token: state.refresh }) });
+    const res = await fetch(API + "/auth/refresh", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ refresh_token: state.refresh })
+    });
     if (!res.ok) return false;
     const d = await res.json();
     if (d.access_token) { setTokens(d.access_token, null); return true; }
   } catch (e) {}
   return false;
 }
+
 async function api(path, options = {}) {
   const { method = "GET", body } = options;
-  const run = () => fetch(API + path, { method, headers: { "Content-Type": "application/json", ...(state.access ? { Authorization: "Bearer " + state.access } : {}) }, body: body ? JSON.stringify(body) : undefined });
+  const run = () => fetch(API + path, {
+    method,
+    headers: {
+      "Content-Type": "application/json",
+      ...(state.access ? { Authorization: "Bearer " + state.access } : {})
+    },
+    body: body ? JSON.stringify(body) : undefined
+  });
   let res = await run();
-  if (res.status === 401 && state.refresh && (await refreshToken())) res = await run();
+  if (res.status === 401 && state.refresh && (await refreshToken())) {
+    res = await run();
+  }
   return res;
 }
-function showNotice(msg, isErr) { const n = $("notice"); n.textContent = msg; n.className = "banner " + (isErr ? "err" : "ok"); n.classList.remove("hidden"); setTimeout(() => n.classList.add("hidden"), 5000); }
-function showLogin(msg) { $("adminApp").classList.add("hidden"); $("login").classList.remove("hidden"); $("loginError").textContent = msg || ""; $("password").value = ""; }
+
+function showNotice(msg, isErr) {
+  const n = $("notice");
+  n.textContent = msg;
+  n.className = "banner " + (isErr ? "err" : "ok");
+  n.classList.remove("hidden");
+  setTimeout(() => n.classList.add("hidden"), 5000);
+}
+
+function showLogin(msg) {
+  $("adminApp").classList.add("hidden");
+  $("login").classList.remove("hidden");
+  $("loginError").textContent = msg || "";
+  $("password").value = "";
+}
+
 async function loadFacultyDatalist() {
   const res = await api("/admin/faculty");
   if (!res.ok) return;
-  const list = await res.json(), dl = $("facultyList"); dl.textContent = "";
-  list.forEach(f => { const opt = document.createElement("option"); opt.value = f.code; opt.textContent = f.name; dl.appendChild(opt); });
+  const list = await res.json(), dl = $("facultyList");
+  dl.textContent = "";
+  list.forEach(f => {
+    const opt = document.createElement("option");
+    opt.value = f.code;
+    opt.textContent = `${f.name} (${f.department || ""})`;
+    dl.appendChild(opt);
+  });
 }
+
+function populateBranchFilter() {
+  const select = $("filterBranch");
+  const branches = Array.from(new Set(state.slots.map(s => s.branch_code).filter(Boolean))).sort();
+  select.innerHTML = '<option value="ALL">All Branches</option>';
+  branches.forEach(b => {
+    const opt = document.createElement("option");
+    opt.value = b;
+    opt.textContent = `Branch: ${b}`;
+    select.appendChild(opt);
+  });
+}
+
+function renderTable() {
+  const q = ($("filterSearch").value || "").toLowerCase().trim();
+  const branch = $("filterBranch").value;
+  const sem = $("filterSem").value;
+
+  state.filteredSlots = state.slots.filter(s => {
+    if (branch !== "ALL" && s.branch_code !== branch) return false;
+    if (sem !== "ALL" && String(s.semester) !== sem) return false;
+    if (q) {
+      const matchSubj = s.subject && (s.subject.code.toLowerCase().includes(q) || s.subject.name.toLowerCase().includes(q));
+      const matchRoom = s.room && s.room.toLowerCase().includes(q);
+      const matchRaw = s.raw_cell_text && s.raw_cell_text.toLowerCase().includes(q);
+      const matchFac = (s.faculty || []).some(f => f.code.toLowerCase().includes(q) || (f.name && f.name.toLowerCase().includes(q)));
+      const matchDay = s.day_name && s.day_name.toLowerCase().includes(q);
+      if (!matchSubj && !matchRoom && !matchRaw && !matchFac && !matchDay) return false;
+    }
+    return true;
+  });
+
+  $("statPending").textContent = state.slots.length;
+  $("statFiltered").textContent = state.filteredSlots.length;
+  $("statPreResolved").textContent = state.slots.filter(s => s.faculty && s.faculty.length > 0).length;
+
+  const tbody = $("queueBody");
+  tbody.textContent = "";
+
+  if (state.filteredSlots.length === 0) {
+    $("emptyMsg").classList.remove("hidden");
+    return;
+  }
+  $("emptyMsg").classList.add("hidden");
+
+  state.filteredSlots.forEach(slot => {
+    const tr = document.createElement("tr");
+    tr.id = "slot-" + slot.id;
+
+    // Branch
+    const tdB = document.createElement("td");
+    tdB.innerHTML = `<span class="pill pill-branch">${slot.branch_code || "-"}</span>`;
+    tr.appendChild(tdB);
+
+    // Sem
+    const tdS = document.createElement("td");
+    tdS.innerHTML = `<span class="pill pill-sem">Sem ${slot.semester || "-"}</span>`;
+    tr.appendChild(tdS);
+
+    // Day & Time
+    const tdDT = document.createElement("td");
+    tdDT.innerHTML = `<strong>${slot.day_name || ""}</strong><br><span style="color:var(--text-muted); font-size:0.75rem;">${slot.start_time || ""}&ndash;${slot.end_time || ""}</span>`;
+    tr.appendChild(tdDT);
+
+    // Batch
+    const tdBatch = document.createElement("td");
+    tdBatch.innerHTML = slot.batch ? `<span class="pill pill-batch">${slot.batch}</span>` : `<span style="color:var(--text-muted)">All</span>`;
+    tr.appendChild(tdBatch);
+
+    // Room input
+    const tdRoom = document.createElement("td");
+    const roomInp = document.createElement("input");
+    roomInp.type = "text";
+    roomInp.value = slot.room || "";
+    roomInp.style.width = "75px";
+    tdRoom.appendChild(roomInp);
+    tr.appendChild(tdRoom);
+
+    // Subject
+    const tdSubj = document.createElement("td");
+    if (slot.subject) {
+      tdSubj.innerHTML = `<div style="font-weight:600;">${slot.subject.code}</div><div style="font-size:0.75rem; color:var(--text-muted);">${slot.subject.name}</div>`;
+    } else {
+      tdSubj.textContent = "-";
+    }
+    tr.appendChild(tdSubj);
+
+    // Raw OCR
+    const tdRaw = document.createElement("td");
+    tdRaw.innerHTML = `<div class="raw-text" title="${slot.raw_cell_text || ''}">${slot.raw_cell_text || "-"}</div>`;
+    tr.appendChild(tdRaw);
+
+    // Current faculty
+    const curFacCodes = (slot.faculty || []).map(f => f.code).join(", ");
+    const tdCur = document.createElement("td");
+    tdCur.innerHTML = curFacCodes ? `<strong>${curFacCodes}</strong>` : `<span style="color:var(--danger)">(none)</span>`;
+    tr.appendChild(tdCur);
+
+    // Fix faculty
+    const tdFix = document.createElement("td");
+    const facInp = document.createElement("input");
+    facInp.type = "text";
+    facInp.setAttribute("list", "facultyList");
+    facInp.placeholder = "e.g. SO, SS";
+    facInp.value = curFacCodes;
+    facInp.style.width = "100px";
+    tdFix.appendChild(facInp);
+    tr.appendChild(tdFix);
+
+    // Action button
+    const tdAct = document.createElement("td");
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "primary";
+    btn.style.fontSize = "0.78rem";
+    btn.style.padding = "6px 12px";
+    btn.textContent = "Confirm";
+
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      const codes = facInp.value.split(",").map(c => c.trim()).filter(Boolean);
+      try {
+        const patchRes = await api("/admin/slots/" + slot.id, {
+          method: "PATCH",
+          body: {
+            faculty_codes: codes,
+            room: roomInp.value.trim() || null,
+            mark_reviewed: true
+          }
+        });
+        if (patchRes.status === 403) { showNotice("Forbidden: Administrator account required.", true); return; }
+        if (patchRes.status === 422) { const err = await patchRes.json(); showNotice(err.detail || "Validation error", true); return; }
+        if (!patchRes.ok) { showNotice("Failed to update slot #" + slot.id, true); return; }
+
+        state.slots = state.slots.filter(s => s.id !== slot.id);
+        renderTable();
+        showNotice(`Slot #${slot.id} confirmed successfully.`, false);
+      } catch (e) {
+        showNotice("Network error.", true);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    tdAct.appendChild(btn);
+    tr.appendChild(tdAct);
+    tbody.appendChild(tr);
+  });
+}
+
 async function loadQueue() {
   const res = await api("/admin/review-queue");
   if (res.status === 403) { showNotice("Access forbidden: an administrator account is required.", true); return; }
   if (res.status === 401) { clearTokens(); showLogin("Session expired."); return; }
   if (!res.ok) { showNotice("Failed to fetch review queue.", true); return; }
-  const data = await res.json(), tbody = $("queueBody"); tbody.textContent = "";
-  if (!data.items || data.items.length === 0) { $("emptyMsg").classList.remove("hidden"); return; }
-  $("emptyMsg").classList.add("hidden");
-  data.items.forEach(slot => {
-    const tr = document.createElement("tr"); tr.id = "slot-" + slot.id;
-    function addCell(txt, cls) { const td = document.createElement("td"); td.textContent = txt !== null && txt !== undefined ? String(txt) : "-"; if (cls) td.className = cls; tr.appendChild(td); return td; }
-    addCell(slot.branch_code || "-"); addCell(slot.semester || "-");
-    addCell((slot.day_name || "") + " " + (slot.start_time || "") + "-" + (slot.end_time || ""));
-    addCell(slot.batch || "-");
-    const roomTd = document.createElement("td"), roomInp = document.createElement("input");
-    roomInp.type = "text"; roomInp.value = slot.room || ""; roomInp.style.width = "70px"; roomTd.appendChild(roomInp); tr.appendChild(roomTd);
-    addCell(slot.subject ? slot.subject.code + ": " + slot.subject.name : "-");
-    addCell(slot.raw_cell_text || "-", "raw-text");
-    const curFac = (slot.faculty || []).map(f => f.code).join(", ");
-    addCell(curFac || "(none)");
-    const facTd = document.createElement("td"), facInp = document.createElement("input");
-    facInp.type = "text"; facInp.setAttribute("list", "facultyList"); facInp.placeholder = "e.g. NA, GH"; facInp.value = curFac; facInp.style.width = "100px"; facTd.appendChild(facInp); tr.appendChild(facTd);
-    const actTd = document.createElement("td"), btn = document.createElement("button");
-    btn.type = "button"; btn.className = "primary"; btn.textContent = "Save & confirm";
-    btn.addEventListener("click", async () => {
-      btn.disabled = true;
-      const codes = facInp.value.split(",").map(c => c.trim()).filter(Boolean);
-      try {
-        const patchRes = await api("/admin/slots/" + slot.id, { method: "PATCH", body: { faculty_codes: codes, room: roomInp.value.trim() || null, mark_reviewed: true } });
-        if (patchRes.status === 403) { showNotice("Forbidden: Administrator account required.", true); return; }
-        if (patchRes.status === 422) { const err = await patchRes.json(); showNotice(err.detail || "Validation error", true); return; }
-        if (!patchRes.ok) { showNotice("Failed to update slot #" + slot.id, true); return; }
-        tr.remove(); showNotice("Slot #" + slot.id + " updated and confirmed.", false);
-        if (tbody.children.length === 0) $("emptyMsg").classList.remove("hidden");
-      } catch (e) { showNotice("Network error.", true); }
-      finally { btn.disabled = false; }
-    });
-    actTd.appendChild(btn); tr.appendChild(actTd); tbody.appendChild(tr);
-  });
+
+  const data = await res.json();
+  state.slots = data.items || [];
+  populateBranchFilter();
+  renderTable();
 }
+
+$("filterSearch").addEventListener("input", renderTable);
+$("filterBranch").addEventListener("change", renderTable);
+$("filterSem").addEventListener("change", renderTable);
+
+$("bulkConfirmBtn").addEventListener("click", async () => {
+  if (state.filteredSlots.length === 0) return;
+  const count = state.filteredSlots.length;
+  if (!confirm(`Are you sure you want to bulk-confirm ${count} slot(s) with their current assigned values?`)) return;
+
+  $("bulkConfirmBtn").disabled = true;
+  let successCount = 0;
+  for (const slot of [...state.filteredSlots]) {
+    const tr = document.getElementById("slot-" + slot.id);
+    const inputs = tr ? tr.querySelectorAll("input") : [];
+    const roomVal = inputs[0] ? inputs[0].value.trim() : (slot.room || "");
+    const facVal = inputs[1] ? inputs[1].value.trim() : ((slot.faculty || []).map(f => f.code).join(", "));
+    const codes = facVal.split(",").map(c => c.trim()).filter(Boolean);
+
+    try {
+      const patchRes = await api("/admin/slots/" + slot.id, {
+        method: "PATCH",
+        body: {
+          faculty_codes: codes,
+          room: roomVal || null,
+          mark_reviewed: true
+        }
+      });
+      if (patchRes.ok) {
+        successCount++;
+        state.slots = state.slots.filter(s => s.id !== slot.id);
+      }
+    } catch (e) {}
+  }
+
+  renderTable();
+  $("bulkConfirmBtn").disabled = false;
+  showNotice(`Bulk confirmation completed: ${successCount} of ${count} slots confirmed.`, false);
+});
+
 $("loginForm").addEventListener("submit", async (e) => {
-  e.preventDefault(); $("loginBtn").disabled = true; $("loginError").textContent = "";
+  e.preventDefault();
+  $("loginBtn").disabled = true;
+  $("loginError").textContent = "";
   try {
-    const res = await fetch(API + "/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: $("email").value.trim(), password: $("password").value }) });
+    const res = await fetch(API + "/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: $("email").value.trim(), password: $("password").value })
+    });
     if (res.status === 401) { $("loginError").textContent = "Invalid credentials."; return; }
     if (!res.ok) { $("loginError").textContent = "Login failed."; return; }
-    const d = await res.json(); setTokens(d.access_token, d.refresh_token); await initDashboard();
-  } catch (err) { $("loginError").textContent = "Could not connect to server."; }
-  finally { $("loginBtn").disabled = false; }
+    const d = await res.json();
+    setTokens(d.access_token, d.refresh_token);
+    await initDashboard();
+  } catch (err) {
+    $("loginError").textContent = "Could not connect to server.";
+  } finally {
+    $("loginBtn").disabled = false;
+  }
 });
+
 $("refreshBtn").addEventListener("click", () => loadQueue());
 $("logoutBtn").addEventListener("click", () => { clearTokens(); showLogin(""); });
+
 async function initDashboard() {
   const meRes = await api("/auth/me");
   if (!meRes.ok) { clearTokens(); showLogin("Session invalid."); return; }
   const me = await meRes.json();
-  if (me.role !== "admin") { clearTokens(); showLogin("Access denied: " + me.email + " is not an administrator."); return; }
-  $("login").classList.add("hidden"); $("adminApp").classList.remove("hidden");
-  $("who").textContent = me.email + " (Administrator)";
-  await loadFacultyDatalist(); await loadQueue();
+  if (me.role !== "admin") {
+    clearTokens();
+    showLogin("Access denied: " + me.email + " is not an administrator.");
+    return;
+  }
+  $("login").classList.add("hidden");
+  $("adminApp").classList.remove("hidden");
+  $("who").textContent = me.email;
+  await loadFacultyDatalist();
+  await loadQueue();
 }
-(async function() { if (state.access) await initDashboard(); else showLogin(""); })();
+
+(async function() {
+  if (state.access) await initDashboard();
+  else showLogin("");
+})();
 </script>
 </body>
 </html>

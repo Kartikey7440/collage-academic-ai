@@ -92,6 +92,11 @@ class UserOut(BaseModel):
     id: int
     email: str
     role: str
+    branch_code: Optional[str] = None
+    semester: Optional[int] = None
+    section: Optional[str] = None
+    batch: Optional[str] = None
+    roll_no: Optional[str] = None
 
     model_config = {"from_attributes": True}
 

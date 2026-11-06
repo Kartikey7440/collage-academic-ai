@@ -1,0 +1,950 @@
+[
+  {
+    "branch": "AI",
+    "code": "31261101",
+    "name": "Digital Logic Design",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261102",
+    "name": "AI Landscape & Tools",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261103",
+    "name": "Software Design and Development",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261104",
+    "name": "Problem Solving and Python Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261105",
+    "name": "Linear Algebra",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261106",
+    "name": "Problem Solving and Python Programming Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31261107",
+    "name": "Linux & DevOps Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31261108",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261109",
+    "name": "Micro Project-I#",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31261110",
+    "name": "Language Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31252101",
+    "name": "Probability and Statistics",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252102",
+    "name": "Design & Analysis of Algorithms",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252103",
+    "name": "Database Management System",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252104",
+    "name": "Computer Networks",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252105",
+    "name": "Operating Systems",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252106",
+    "name": "Problem Solving through Python Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252107",
+    "name": "Design & Analysis of Algorithms Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31252108",
+    "name": "Semester Proficiency",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252109",
+    "name": "Macro Project-I",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252110",
+    "name": "Self-learning/Presentation",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31252111",
+    "name": "Cyber Security",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243101",
+    "name": "Machine Learning",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243102",
+    "name": "Cloud Computing & Virtualization",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243103",
+    "name": "Evolutionary Algorithms and Optimization",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243104",
+    "name": "Statistical Computing",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "312431XX",
+    "name": "Departmental Elective (DE-1)",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243105",
+    "name": "Machine Learning Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31243106",
+    "name": "Cloud Computing & Virtualization Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31243107",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243108",
+    "name": "Statistical Computing Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AI",
+    "code": "31243109",
+    "name": "Cornerstone Project",
+    "is_lab": false
+  },
+  {
+    "branch": "AI",
+    "code": "31243110",
+    "name": "Supply Chain Management",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261101",
+    "name": "Digital Logic Design",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261102",
+    "name": "Foundations of Artificial Intelligence and Robotics",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261103",
+    "name": "Electronic Systems",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261104",
+    "name": "Problem Solving and Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261105",
+    "name": "Linear Algebra",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261106",
+    "name": "Problem Solving and Programming Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24261107",
+    "name": "Electronic Systems Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24261108",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261109",
+    "name": "Micro Project-I#",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24261110",
+    "name": "Language Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24252101",
+    "name": "Probability and Statistics",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252102",
+    "name": "Design & Analysis of Algorithms",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252103",
+    "name": "Control System",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252104",
+    "name": "Computer Networks",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252105",
+    "name": "Operating Systems",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252106",
+    "name": "Problem Solving through Python Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252107",
+    "name": "Design & Analysis of Algorithms Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24252108",
+    "name": "Semester Proficiency",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252109",
+    "name": "Macro Project-I",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252110",
+    "name": "Self-learning/Presentation",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24252111",
+    "name": "Cyber Security",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243101",
+    "name": "Theory of Computation",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243102",
+    "name": "Internet of Things",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243101",
+    "name": "Data Mining and Warehousing",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243102",
+    "name": "Cloud Computing & Virtualization",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243103",
+    "name": "Evolutionary Algorithms and Optimization",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243104",
+    "name": "Machine Learning",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "272431XX",
+    "name": "Departmental Elective (DE-1)",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243105",
+    "name": "Data Mining and Warehousing Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243106",
+    "name": "Cloud Computing & Virtualization Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243107",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243108",
+    "name": "Machine Learning Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243109",
+    "name": "Cornerstone Project",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27243110",
+    "name": "Supply Chain Management",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "3270721",
+    "name": "Augmented & Virtual Reality Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "3270722",
+    "name": "Creative Problem Solving",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "3270723",
+    "name": "Professional Skills & Competencies",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "1000008",
+    "name": "Universal Human Values & Professional Ethics(UHVPE)",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261101",
+    "name": "Digital Logic Design",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261102",
+    "name": "Foundations of Machine Learning",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261103",
+    "name": "Internet and Web Technologies",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261104",
+    "name": "Problem Solving and Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261105",
+    "name": "Linear Algebra",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261106",
+    "name": "Problem Solving and Programming Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28261107",
+    "name": "Internet and Web Technologies Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28261108",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261109",
+    "name": "Micro Project-I#",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28261110",
+    "name": "Language Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28252101",
+    "name": "Probability and Statistics",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252102",
+    "name": "Design & Analysis of Algorithms",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252103",
+    "name": "Database Management System",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252104",
+    "name": "Computer Networks",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252105",
+    "name": "Operating Systems",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252106",
+    "name": "Problem Solving through Python Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252107",
+    "name": "Design & Analysis of Algorithms Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28252108",
+    "name": "Semester Proficiency",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252109",
+    "name": "Macro Project-I",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252110",
+    "name": "Self-learning/Presentation",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28252111",
+    "name": "Cyber Security",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243101",
+    "name": "Deep Learning",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243102",
+    "name": "Cloud Computing & Big Data",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243103",
+    "name": "Evolutionary Algorithms and Optimization",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243104",
+    "name": "Image Processing",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "282431XX",
+    "name": "Departmental Elective (DE-1)",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243105",
+    "name": "Deep Learning Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28243106",
+    "name": "Cloud Computing & Big Data Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28243107",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243108",
+    "name": "Image Processing Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "28243109",
+    "name": "Cornerstone Project",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "28243110",
+    "name": "Supply Chain Management",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "3280721",
+    "name": "Augmented & Virtual Reality Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIML",
+    "code": "3280722",
+    "name": "Creative Problem Solving",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "3280723",
+    "name": "Professional Skills & Competencies",
+    "is_lab": false
+  },
+  {
+    "branch": "AIML",
+    "code": "1000008",
+    "name": "Universal Human Values & Professional Ethics(UHVPE)",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261101",
+    "name": "Mathematical Foundations for Artificial Intelligence",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261102",
+    "name": "Machine Learning",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261103",
+    "name": "Evolutionary Algorithms and Optimization",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261104",
+    "name": "Deep Learning",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261105",
+    "name": "Computational Intelligence Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261106",
+    "name": "Seminar/Presentation",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261107",
+    "name": "CNEC - Python for AI and Scientific Computing",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261108",
+    "name": "Cloud AI and MLOps",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. AI",
+    "code": "73261109",
+    "name": "Cyber Security and Privacy in AI Systems",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261101",
+    "name": "Mathematical Foundations for Information Security",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261102",
+    "name": "Cryptography and Network Security",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261103",
+    "name": "AI for Cyber Security",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261104",
+    "name": "Digital Forensics and Cyber Law",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261105",
+    "name": "Information Security Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261106",
+    "name": "Seminar/Presentation",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261107",
+    "name": "CNEC - Security Tools and Vulnerability Assessment",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261108",
+    "name": "Securing AI Pipelines",
+    "is_lab": false
+  },
+  {
+    "branch": "M. Tech. Info. Sec.",
+    "code": "76261109",
+    "name": "Ethical Hacking",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243103",
+    "name": "Robot Operating System",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243104",
+    "name": "Data Science",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "242431XX",
+    "name": "Departmental Elective (DE-1)",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243105",
+    "name": "Robot Operating System Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24243106",
+    "name": "Internet of Things Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24243107",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243108",
+    "name": "Data Science Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "24243109",
+    "name": "Cornerstone Project",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "24243110",
+    "name": "Supply Chain Management",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "3240721",
+    "name": "Augmented & Virtual Reality Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIR",
+    "code": "3240722",
+    "name": "Creative Problem Solving",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "3240723",
+    "name": "Professional Skills & Competencies",
+    "is_lab": false
+  },
+  {
+    "branch": "AIR",
+    "code": "1000008",
+    "name": "Universal Human Values & Professional Ethics(UHVPE)",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261101",
+    "name": "Digital Logic Design",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261102",
+    "name": "Foundations of Data Science",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261103",
+    "name": "Internet and Web Technologies",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261104",
+    "name": "Problem Solving and Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261105",
+    "name": "Linear Algebra",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261106",
+    "name": "Problem Solving and Programming Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261107",
+    "name": "Internet and Web Technologies Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261108",
+    "name": "Semester Proficiency$",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261109",
+    "name": "Micro Project-I#",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27261110",
+    "name": "Language Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252101",
+    "name": "Probability and Statistics",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252102",
+    "name": "Design & Analysis of Algorithms",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252103",
+    "name": "Database Management System",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252104",
+    "name": "Computer Networks",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252105",
+    "name": "Operating Systems",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252106",
+    "name": "Problem Solving through Python Programming",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252107",
+    "name": "Design & Analysis of Algorithms Lab",
+    "is_lab": true
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252108",
+    "name": "Semester Proficiency",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252109",
+    "name": "Macro Project-I",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252110",
+    "name": "Self-learning/Presentation",
+    "is_lab": false
+  },
+  {
+    "branch": "AIDS",
+    "code": "27252111",
+    "name": "Cyber Security",
+    "is_lab": false
+  }
+]

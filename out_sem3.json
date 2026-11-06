@@ -1,0 +1,2510 @@
+[
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "TUE",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252105 RS M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "TUE",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252102 SS M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252104 SD M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252101 AI-S1 SO\nM202",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "TUE",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "31252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252103 BSR M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "TUE",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252109",
+    "subject_name": "Macro Project-I",
+    "faculty_codes": [
+      "BSR",
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi",
+      "Dr. Shipra Shukla"
+    ],
+    "batch": "A+B",
+    "room": "M301",
+    "raw_cell_text": "31252109 Batch (A+B) (BSR+SS) M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252101 AI-S1 SO\nM202",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "WED",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "31252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252104 SD M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "WED",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252110",
+    "subject_name": "Self-learning/Presentation",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252110 GH M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252101 AI-S1 SO\nM202",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "THU",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "31252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252102 SS M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "31252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252103 BSR M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "THU",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "subject_code": "NEC",
+    "subject_name": "Non-Exam Credit",
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": null,
+    "raw_cell_text": "NEC",
+    "needs_review": true,
+    "review_reason": "Non-Exam Credit activity slot; pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252102 SS M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252105 RS M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252101 AI-S1 SO\nM202",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "FRI",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "31252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252104 SD M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "FRI",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252107",
+    "subject_name": "Design & Analysis of Algorithms Lab",
+    "faculty_codes": [
+      "SS",
+      "RST"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla",
+      "Mr. Rahul Senthiya"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "31252107 Batch (A+B) AI-S1 (SS+RST) M203",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors SS (Dr. Shipra Shukla) + RST (Mr. Rahul Senthiya); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "SAT",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31252108",
+    "subject_name": "Semester Proficiency",
+    "faculty_codes": [
+      "NH"
+    ],
+    "faculty_names": [
+      "Dr. Nidhi Humnekar"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252108 NH M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252105 RS M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "SAT",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252103 BSR M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31252111",
+    "subject_name": "Cyber Security",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252111 GH M202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "1",
+    "day": "SAT",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252106",
+    "subject_name": "Problem Solving through Python Programming",
+    "faculty_codes": [
+      "RDP",
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Rishabh Deo Pandey",
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "31252106 Batch (A+B) AI-1 (RDP+SD) M203",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors RDP (Dr. Rishabh Deo Pandey) + SD (Dr. Sumit Dhariwal); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M103",
+    "raw_cell_text": "31252101 AI-S2 SO\nM103",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "31252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "31252104 AI-S2 SD\nJ110",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SD (Dr. Sumit Dhariwal); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "TUE",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "31252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "31252102 AI-S2 SS\nJ110",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SS (Dr. Shipra Shukla); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252105 AI-S2 RS\nM202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "WED",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252104 AI-S2 SD\nM202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "WED",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252103 AI-S2 BSR\nM202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31252107",
+    "subject_name": "Design & Analysis of Algorithms Lab",
+    "faculty_codes": [
+      "SS",
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla",
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": "A+B",
+    "room": "M104",
+    "raw_cell_text": "31252107 Batch (A+B) AI-S2 (SS+BSR)\nM104",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors SS (Dr. Shipra Shukla) + BSR (Dr. Bhagat S. Raghuwanshi); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "WED",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252109",
+    "subject_name": "Macro Project-I",
+    "faculty_codes": [
+      "BSR",
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi",
+      "Dr. Shipra Shukla"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "31252109 Batch (A+B) AI-S2 (BSR+SS) M203",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors BSR (Dr. Bhagat S. Raghuwanshi) + SS (Dr. Shipra Shukla); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "THU",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252105 AI-S2 RS\nM202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "THU",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252102 AI-S2 SS\nM202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "THU",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "M202",
+    "raw_cell_text": "31252103 AI-S2 BSR\nM202",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31252111",
+    "subject_name": "Cyber Security",
+    "faculty_codes": [
+      "GH"
+    ],
+    "faculty_names": [
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "31252111 AI-S2 GH M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "31252101 AI-S2 SO\nM101",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "THU",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "subject_code": "NEC",
+    "subject_name": "Non-Exam Credit",
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": null,
+    "raw_cell_text": "NEC",
+    "needs_review": true,
+    "review_reason": "Non-Exam Credit activity slot; pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "FRI",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M103",
+    "raw_cell_text": "31252101 AI-S2 SO\nM103",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "31252108",
+    "subject_name": "Semester Proficiency",
+    "faculty_codes": [
+      "NH"
+    ],
+    "faculty_names": [
+      "Dr. Nidhi Humnekar"
+    ],
+    "batch": null,
+    "room": "M103",
+    "raw_cell_text": "31252108 AI-S2 NH M103",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31252106",
+    "subject_name": "Problem Solving through Python Programming",
+    "faculty_codes": [
+      "MC",
+      "AA"
+    ],
+    "faculty_names": [
+      "Dr. Mausam Chouksey",
+      "Ms. Archana Acharya"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "31252106 Batch (A+B) S-2 (MC+AA) M203",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors MC (Dr. Mausam Chouksey) + AA (Ms. Archana Acharya); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "FRI",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M103",
+    "raw_cell_text": "31252105 AI-S2 RS\nM103",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "SAT",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "31252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M001",
+    "raw_cell_text": "31252104 AI-S2 SD\nM001",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "31252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "SS"
+    ],
+    "faculty_names": [
+      "Dr. Shipra Shukla"
+    ],
+    "batch": null,
+    "room": "M001",
+    "raw_cell_text": "31252102 AI-S2 SS\nM001",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "SAT",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "31252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M001",
+    "raw_cell_text": "31252101 AI-S2 SO\nM001",
+    "needs_review": true,
+    "review_reason": "Resolved faculty SO (Dr. Satyam Omar); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "31252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "BSR"
+    ],
+    "faculty_names": [
+      "Dr. Bhagat S. Raghuwanshi"
+    ],
+    "batch": null,
+    "room": "M001",
+    "raw_cell_text": "31252103 AI-S2 BSR\nM001",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AI",
+    "semester": 3,
+    "section": "2",
+    "day": "SAT",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "31252110",
+    "subject_name": "Self-learning/Presentation",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "M001",
+    "raw_cell_text": "31252110 AI-S2 SO M001",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252105 RRS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252101 VSS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252102 AST M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "24252110",
+    "subject_name": "Self-learning/Presentation",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": "A+B",
+    "room": "M201",
+    "raw_cell_text": "24252110 Batch (A+B) RS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "24252108",
+    "subject_name": "Semester Proficiency",
+    "faculty_codes": [
+      "MS"
+    ],
+    "faculty_names": [
+      "Dr. Mehuli Santra"
+    ],
+    "batch": "A+B",
+    "room": "M201",
+    "raw_cell_text": "24252108 Batch (A+B) MS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RRS"
+    ],
+    "faculty_names": [
+      "Dr. Rajni Ranjan Singh"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252105 RRS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252102 AST M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252101 VSS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "24252111",
+    "subject_name": "Cyber Security",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": "A+B",
+    "room": "M201",
+    "raw_cell_text": "24252111 Batch (A+B) PT M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24252103",
+    "subject_name": "Control System",
+    "faculty_codes": [
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252103 NM M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252102 AST M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RRS"
+    ],
+    "faculty_names": [
+      "Dr. Rajni Ranjan Singh"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252105 RRS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "24252107",
+    "subject_name": "Design & Analysis of Algorithms Lab",
+    "faculty_codes": [
+      "AST",
+      "RS"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar",
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "24252107 Batch (A+B) (AST+RS) M203",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors AST (Dr. Anurag Singh Tomar) + RS (Mr. Ramnaresh Sharma); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "24252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252104 SD M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "subject_code": "NEC",
+    "subject_name": "Non-Exam Credit",
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": null,
+    "raw_cell_text": "NEC",
+    "needs_review": true,
+    "review_reason": "Non-Exam Credit activity slot; pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252101 VSS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24252103",
+    "subject_name": "Control System",
+    "faculty_codes": [
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252103 NM M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252104 SD M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "24252106",
+    "subject_name": "Problem Solving through Python Programming",
+    "faculty_codes": [
+      "AST",
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar",
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "24252106 Batch (A+B) (AST+SD) M203",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors AST (Dr. Anurag Singh Tomar) + SD (Dr. Sumit Dhariwal); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "24252109",
+    "subject_name": "Macro Project-I",
+    "faculty_codes": [
+      "RS",
+      "GH"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma",
+      "Mrs. Geetika Hazra"
+    ],
+    "batch": "A+B",
+    "room": "M104",
+    "raw_cell_text": "24252109 Batch (A+B) RS+GH M104",
+    "needs_review": true,
+    "review_reason": "Resolved co-instructors RS (Mr. Ramnaresh Sharma) + GH (Mrs. Geetika Hazra); pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "24252103",
+    "subject_name": "Control System",
+    "faculty_codes": [
+      "NM"
+    ],
+    "faculty_names": [
+      "Dr. Neeraj Mishra"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252103 NM M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "24252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "VSS"
+    ],
+    "faculty_names": [
+      "Dr. Vijay Shankar Sharma"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252101 VSS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIR",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "24252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "SD"
+    ],
+    "faculty_names": [
+      "Dr. Sumit Dhariwal"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "24252104 SD M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "10:00",
+    "end_time": "13:00",
+    "subject_code": "27252111",
+    "subject_name": "Cyber Security",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252111 PT Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "27252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252104 PT\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "27252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252101 SO\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "27252106",
+    "subject_name": "Problem Solving through Python Programming",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "27252106 Batch (A+B) (PD+PT) M203",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "subject_code": "27252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252103 SM\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27252107",
+    "subject_name": "Design & Analysis of Algorithms Lab",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": "A+B",
+    "room": "RDP+AA",
+    "raw_cell_text": "27252107 Batch (A+B) (RDP+AA) M203",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "27252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252103 SM\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "27252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "RDP"
+    ],
+    "faculty_names": [
+      "Dr. Rishabh Deo Pandey"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252102 RDP\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252101 SO\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "27252110",
+    "subject_name": "Self-learning/Presentation",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252110 AS Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "27252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252105 RS\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "subject_code": "NEC",
+    "subject_name": "Non-Exam Credit",
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": null,
+    "raw_cell_text": "NEC",
+    "needs_review": true,
+    "review_reason": "Non-Exam Credit activity slot; pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "27252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "RDP"
+    ],
+    "faculty_names": [
+      "Dr. Rishabh Deo Pandey"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252102 RDP\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "27252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252103 SM\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252101 SO\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "27252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "27252105 RS M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "27252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "27252104 PT M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "27252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "SO"
+    ],
+    "faculty_names": [
+      "Dr. Satyam Omar"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252101 SO\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "27252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "RDP"
+    ],
+    "faculty_names": [
+      "Dr. Rishabh Deo Pandey"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252102 RDP\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "27252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "27252104 PT\nArch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "27252109",
+    "subject_name": "Macro Project-I",
+    "faculty_codes": [
+      "SM",
+      "AA"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra",
+      "Ms. Archana Acharya"
+    ],
+    "batch": null,
+    "room": "M104",
+    "raw_cell_text": "27252109 SM + AA M104",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIDS",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "27252108",
+    "subject_name": "Semester Proficiency",
+    "faculty_codes": [
+      "RST"
+    ],
+    "faculty_names": [
+      "Mr. Rahul Senthiya"
+    ],
+    "batch": null,
+    "room": "M201",
+    "raw_cell_text": "27252108 RST M201",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "28252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252103 SM M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "28252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RRS"
+    ],
+    "faculty_names": [
+      "Dr. Rajni Ranjan Singh"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252105 RRS M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "28252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252102 AST M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "28252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252101 AS M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "TUE",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "28252109",
+    "subject_name": "Macro Project-I",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252109 SM +RES M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "28252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252101 AS M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "28252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252104 PT M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "28252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RRS"
+    ],
+    "faculty_names": [
+      "Dr. Rajni Ranjan Singh"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252105 RRS M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "WED",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "28252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "28252102 AST Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "28252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "M102",
+    "raw_cell_text": "28252101 AS M102",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "28252106",
+    "subject_name": "Problem Solving through Python Programming",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "28252106 Batch (A+B) (SM+PT) M203",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "28252110",
+    "subject_name": "Self-learning/Presentation",
+    "faculty_codes": [
+      "PSK"
+    ],
+    "faculty_names": [
+      "Dr. Pritha Singh Kushwah"
+    ],
+    "batch": null,
+    "room": "M301",
+    "raw_cell_text": "28252110 PSK M301",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "subject_code": "28252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "J110",
+    "raw_cell_text": "28252104 PT J110",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "THU",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "subject_code": "NEC",
+    "subject_name": "Non-Exam Credit",
+    "faculty_codes": [],
+    "faculty_names": [],
+    "batch": null,
+    "room": null,
+    "raw_cell_text": "NEC",
+    "needs_review": true,
+    "review_reason": "Non-Exam Credit activity slot; pending confirmation"
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "28252105",
+    "subject_name": "Operating Systems",
+    "faculty_codes": [
+      "RRS"
+    ],
+    "faculty_names": [
+      "Dr. Rajni Ranjan Singh"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252105 RRS M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "11:00",
+    "end_time": "12:00",
+    "subject_code": "28252104",
+    "subject_name": "Computer Networks",
+    "faculty_codes": [
+      "PT"
+    ],
+    "faculty_names": [
+      "Ms. Pooja Tripathi"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252104 PT M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "12:00",
+    "end_time": "13:00",
+    "subject_code": "28252101",
+    "subject_name": "Probability and Statistics",
+    "faculty_codes": [
+      "AS"
+    ],
+    "faculty_names": [
+      "Dr. Anu Sayal"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252101 AS M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "subject_code": "28252102",
+    "subject_name": "Design & Analysis of Algorithms",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252102 AST M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "FRI",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "subject_code": "28252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "M101",
+    "raw_cell_text": "28252103 SM M101",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "subject_code": "28252103",
+    "subject_name": "Database Management System",
+    "faculty_codes": [
+      "SM"
+    ],
+    "faculty_names": [
+      "Dr. Shubha Mishra"
+    ],
+    "batch": null,
+    "room": "M002",
+    "raw_cell_text": "28252103 SM M002",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "11:00",
+    "end_time": "13:00",
+    "subject_code": "28252107",
+    "subject_name": "Design & Analysis of Algorithms Lab",
+    "faculty_codes": [
+      "AST"
+    ],
+    "faculty_names": [
+      "Dr. Anurag Singh Tomar"
+    ],
+    "batch": "A+B",
+    "room": "M203",
+    "raw_cell_text": "28252107 Batch(A+B) (AST+RES) M203",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "14:00",
+    "end_time": "16:00",
+    "subject_code": "28252108",
+    "subject_name": "Semester Proficiency",
+    "faculty_codes": [
+      "RS"
+    ],
+    "faculty_names": [
+      "Mr. Ramnaresh Sharma"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "28252108 RS Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  },
+  {
+    "type": "timetable_entry",
+    "branch": "AIML",
+    "semester": 3,
+    "section": null,
+    "day": "SAT",
+    "start_time": "16:00",
+    "end_time": "18:00",
+    "subject_code": "28252111",
+    "subject_name": "Cyber Security",
+    "faculty_codes": [
+      "HSP"
+    ],
+    "faculty_names": [
+      "Dr. Hardev Singh Pal"
+    ],
+    "batch": null,
+    "room": "Arch-Library",
+    "raw_cell_text": "28252111 HSP Arch-Library",
+    "needs_review": false,
+    "review_reason": null
+  }
+]

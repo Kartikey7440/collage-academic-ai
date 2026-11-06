@@ -49,7 +49,32 @@ GET_CLASSES = types.FunctionDeclaration(
     ),
 )
 
-TOOLS = [types.Tool(function_declarations=[GET_CLASSES])]
+GET_ACADEMIC_CALENDAR = types.FunctionDeclaration(
+    name="get_academic_calendar",
+    description=(
+        "Look up college academic calendar dates, events, exams, breaks, holidays, "
+        "and regulations/rules (e.g., minor/major exam dates, semester breaks, "
+        "attendance requirements, NEC courses, make-up exam rules, summer semester). "
+        "query_type: 'upcoming' = upcoming events from today; 'search' = search by keyword "
+        "(e.g. 'exam', 'break', 'minor', 'attendance', 'nec', 'nptel')."
+    ),
+    parameters=types.Schema(
+        type=types.Type.OBJECT,
+        properties={
+            "query_type": types.Schema(
+                type=types.Type.STRING,
+                enum=["upcoming", "search"],
+            ),
+            "search_term": types.Schema(
+                type=types.Type.STRING,
+                description="Keyword to search in calendar events and regulations (e.g. 'break', 'exam', 'nec', 'attendance').",
+            ),
+        },
+        required=["query_type"],
+    ),
+)
+
+TOOLS = [types.Tool(function_declarations=[GET_CLASSES, GET_ACADEMIC_CALENDAR])]
 
 
 # ---------------------------------------------------------------------------
@@ -186,6 +211,98 @@ async def get_classes(
     return {"error": f"Unknown query_type '{query_type}'."}
 
 
+async def query_academic_calendar(
+    db: AsyncSession,
+    identity: ScopedIdentity,
+    now: datetime,
+    *,
+    query_type: str,
+    search_term: Optional[str] = None,
+) -> dict[str, Any]:
+    """Query academic events and regulation guidelines from the database."""
+    from db.models import AcademicEvent, DocumentChunk
+    from sqlalchemy import or_, select
+
+    today = now.date()
+    term = (search_term or "").strip().lower()
+
+    if query_type == "upcoming":
+        stmt = (
+            select(AcademicEvent)
+            .where(
+                AcademicEvent.end_date >= today,
+                or_(
+                    AcademicEvent.branch_id.is_(None),
+                    AcademicEvent.branch_id == identity.branch_id,
+                ),
+                or_(
+                    AcademicEvent.semester.is_(None),
+                    AcademicEvent.semester == identity.semester,
+                ),
+            )
+            .order_by(AcademicEvent.start_date)
+            .limit(10)
+        )
+        res = await db.execute(stmt)
+        events = res.scalars().all()
+        return {
+            "query_type": "upcoming",
+            "from_date": today.isoformat(),
+            "events": [
+                {
+                    "title": e.title,
+                    "type": e.event_type,
+                    "start_date": e.start_date.isoformat(),
+                    "end_date": e.end_date.isoformat(),
+                    "suppresses_classes": e.suppresses_timetable,
+                    "description": e.description,
+                }
+                for e in events
+            ],
+        }
+
+    # query_type == "search"
+    event_stmt = (
+        select(AcademicEvent)
+        .where(
+            or_(
+                AcademicEvent.title.ilike(f"%{term}%"),
+                AcademicEvent.description.ilike(f"%{term}%"),
+                AcademicEvent.event_type.ilike(f"%{term}%"),
+            )
+        )
+        .order_by(AcademicEvent.start_date)
+        .limit(10)
+    )
+    event_res = await db.execute(event_stmt)
+    matched_events = event_res.scalars().all()
+
+    chunk_stmt = (
+        select(DocumentChunk.content)
+        .where(DocumentChunk.content.ilike(f"%{term}%"))
+        .limit(5)
+    )
+    chunk_res = await db.execute(chunk_stmt)
+    matched_chunks = chunk_res.scalars().all()
+
+    return {
+        "query_type": "search",
+        "search_term": term,
+        "matched_events": [
+            {
+                "title": e.title,
+                "type": e.event_type,
+                "start_date": e.start_date.isoformat(),
+                "end_date": e.end_date.isoformat(),
+                "suppresses_classes": e.suppresses_timetable,
+                "description": e.description,
+            }
+            for e in matched_events
+        ],
+        "relevant_guidelines": list(matched_chunks),
+    }
+
+
 async def run_tool(
     name: str,
     args: dict[str, Any],
@@ -195,18 +312,31 @@ async def run_tool(
     now: datetime,
 ) -> dict[str, Any]:
     """Run a tool the model asked for. Never raises for expected problems."""
-    if name != "get_classes":
-        return {"error": f"Unknown tool '{name}'."}
-    try:
-        return await get_classes(
-            db,
-            identity,
-            now,
-            query_type=str(args.get("query_type", "")),
-            day=args.get("day"),
-        )
-    except HTTPException as exc:
-        return {"error": str(exc.detail)}
+    if name == "get_classes":
+        try:
+            return await get_classes(
+                db,
+                identity,
+                now,
+                query_type=str(args.get("query_type", "")),
+                day=args.get("day"),
+            )
+        except HTTPException as exc:
+            return {"error": str(exc.detail)}
+    elif name == "get_academic_calendar":
+        try:
+            return await query_academic_calendar(
+                db,
+                identity,
+                now,
+                query_type=str(args.get("query_type", "upcoming")),
+                search_term=args.get("search_term"),
+            )
+        except HTTPException as exc:
+            return {"error": str(exc.detail)}
+        except Exception as exc:
+            return {"error": str(exc)}
+    return {"error": f"Unknown tool '{name}'."}
 
 
 # ---------------------------------------------------------------------------
@@ -229,6 +359,25 @@ def format_result(result: dict[str, Any]) -> str:
     """Turn a tool result into a short plain-text answer, without any AI."""
     if "error" in result:
         return result["error"]
+    if "events" in result:
+        if not result["events"]:
+            return "No upcoming academic events found."
+        lines = ["Upcoming Academic Events:"]
+        for ev in result["events"]:
+            dates = ev["start_date"] if ev["start_date"] == ev["end_date"] else f"{ev['start_date']} to {ev['end_date']}"
+            lines.append(f"• {dates}: {ev['title']}")
+        return "\n".join(lines)
+    if "matched_events" in result:
+        lines = []
+        if result["matched_events"]:
+            lines.append(f"Events matching '{result.get('search_term', '')}':")
+            for ev in result["matched_events"]:
+                dates = ev["start_date"] if ev["start_date"] == ev["end_date"] else f"{ev['start_date']} to {ev['end_date']}"
+                lines.append(f"• {dates}: {ev['title']}")
+        if result.get("relevant_guidelines"):
+            lines.append("Academic Guidelines:")
+            lines.extend(f"• {g}" for g in result["relevant_guidelines"])
+        return "\n".join(lines) or "No matching academic events or guidelines found."
     if "next_class" in result:
         if result["next_class"] is None:
             return result.get("message", "No upcoming classes.")

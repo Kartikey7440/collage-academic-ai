@@ -5,7 +5,9 @@
   "scripts": {
     "build": "python -m py_compile api/main.py api/config.py db/session.py db/queries.py",
     "start": "uvicorn api.main:app --host 0.0.0.0 --port 8000",
-    "test": "pytest"
+    "test": "pytest",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
   },
   "dependencies": {
     "@neon/config": "^1.9.2",

@@ -1,0 +1,627 @@
+{
+  "academic_year": "2026-2027",
+  "target_audience": "All UG Second and Third Year Classes & PG Second Year Classes",
+  "total_events": 42,
+  "events": [
+    {
+      "title": "Online Semester Registration",
+      "event_type": "registration",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #1: Online Semester Registration",
+      "s_no": 1
+    },
+    {
+      "title": "Online Semester Registration",
+      "event_type": "registration",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2026-12-24",
+      "end_date": "2026-12-24",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #1: Online Semester Registration",
+      "s_no": 1
+    },
+    {
+      "title": "Online Semester Registration",
+      "event_type": "registration",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-05-29",
+      "end_date": "2027-05-30",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #1: Online Semester Registration",
+      "s_no": 1
+    },
+    {
+      "title": "Teaching Starts (Orientation Session)",
+      "event_type": "instruction",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-27",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #2: Teaching Starts (Orientation Session)",
+      "s_no": 2
+    },
+    {
+      "title": "Teaching Starts (Orientation Session)",
+      "event_type": "instruction",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-01-04",
+      "end_date": "2027-01-04",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #2: Teaching Starts (Orientation Session)",
+      "s_no": 2
+    },
+    {
+      "title": "Teaching Starts (Orientation Session)",
+      "event_type": "instruction",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-05-31",
+      "end_date": "2027-05-31",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #2: Teaching Starts (Orientation Session)",
+      "s_no": 2
+    },
+    {
+      "title": "Minor (Practical Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-09-21",
+      "end_date": "2026-09-25",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #3: Minor (Practical Courses)",
+      "s_no": 3
+    },
+    {
+      "title": "Minor (Practical Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-02-22",
+      "end_date": "2027-02-27",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #3: Minor (Practical Courses)",
+      "s_no": 3
+    },
+    {
+      "title": "Minor (Practical Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-15",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #3: Minor (Practical Courses)",
+      "s_no": 3
+    },
+    {
+      "title": "Foundation Day MITS-DU (MITS Day)",
+      "event_type": "holiday",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-03-10",
+      "end_date": "2027-03-10",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #4: Foundation Day MITS-DU (MITS Day)",
+      "s_no": 4
+    },
+    {
+      "title": "Notification of Attendance",
+      "event_type": "attendance",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-01",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #5: Notification of Attendance",
+      "s_no": 5
+    },
+    {
+      "title": "Notification of Attendance",
+      "event_type": "attendance",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-12",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #5: Notification of Attendance",
+      "s_no": 5
+    },
+    {
+      "title": "Notification of Attendance",
+      "event_type": "attendance",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-14",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #5: Notification of Attendance",
+      "s_no": 5
+    },
+    {
+      "title": "Minor (Theory Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-09",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #6: Minor (Theory Courses)",
+      "s_no": 6
+    },
+    {
+      "title": "Minor (Theory Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-03-15",
+      "end_date": "2027-03-19",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #6: Minor (Theory Courses)",
+      "s_no": 6
+    },
+    {
+      "title": "Minor (Theory Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-06-16",
+      "end_date": "2027-06-17",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #6: Minor (Theory Courses)",
+      "s_no": 6
+    },
+    {
+      "title": "Semester Break (Even Semester)",
+      "event_type": "break",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-03-22",
+      "end_date": "2027-03-26",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #7: Semester Break (Even Semester)",
+      "s_no": 7
+    },
+    {
+      "title": "Project Expo",
+      "event_type": "academic",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-04",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #8: Project Expo",
+      "s_no": 8
+    },
+    {
+      "title": "Project Expo",
+      "event_type": "academic",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-21",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #8: Project Expo",
+      "s_no": 8
+    },
+    {
+      "title": "Semester Proficiency",
+      "event_type": "academic",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-05",
+      "end_date": "2026-11-06",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #9: Semester Proficiency",
+      "s_no": 9
+    },
+    {
+      "title": "Semester Proficiency",
+      "event_type": "academic",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-04-22",
+      "end_date": "2027-04-23",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #9: Semester Proficiency",
+      "s_no": 9
+    },
+    {
+      "title": "Semester Break (Odd Semester)",
+      "event_type": "break",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-13",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #10: Semester Break (Odd Semester)",
+      "s_no": 10
+    },
+    {
+      "title": "Make-up Evaluations (Students with Bonafide reasons only)",
+      "event_type": "exam",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-17",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #11: Make-up Evaluations (Students with Bonafide reasons only)",
+      "s_no": 11
+    },
+    {
+      "title": "Make-up Evaluations (Students with Bonafide reasons only)",
+      "event_type": "exam",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-04-26",
+      "end_date": "2027-04-27",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #11: Make-up Evaluations (Students with Bonafide reasons only)",
+      "s_no": 11
+    },
+    {
+      "title": "Teaching Ends",
+      "event_type": "instruction",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #12: Teaching Ends",
+      "s_no": 12
+    },
+    {
+      "title": "Teaching Ends",
+      "event_type": "instruction",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-04-27",
+      "end_date": "2027-04-27",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #12: Teaching Ends",
+      "s_no": 12
+    },
+    {
+      "title": "Teaching Ends",
+      "event_type": "instruction",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-07-14",
+      "end_date": "2027-07-14",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #12: Teaching Ends",
+      "s_no": 12
+    },
+    {
+      "title": "Major Evaluation (Lab Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-20",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #13: Major Evaluation (Lab Courses)",
+      "s_no": 13
+    },
+    {
+      "title": "Major Evaluation (Lab Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-04-28",
+      "end_date": "2027-04-30",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #13: Major Evaluation (Lab Courses)",
+      "s_no": 13
+    },
+    {
+      "title": "Major Evaluation (Lab Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-07-15",
+      "end_date": "2027-07-19",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #13: Major Evaluation (Lab Courses)",
+      "s_no": 13
+    },
+    {
+      "title": "Major Evaluation (Theory Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-11-23",
+      "end_date": "2026-12-06",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #14: Major Evaluation (Theory Courses)",
+      "s_no": 14
+    },
+    {
+      "title": "Major Evaluation (Theory Courses)",
+      "event_type": "exam",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-05-03",
+      "end_date": "2027-05-19",
+      "suppresses_timetable": true,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #14: Major Evaluation (Theory Courses)",
+      "s_no": 14
+    },
+    {
+      "title": "Skill Internship Program (Technical)- For Regular II & Ex-III-year students",
+      "event_type": "internship",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-18",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #15: Skill Internship Program (Technical)- For Regular II & Ex-III-year students",
+      "s_no": 15
+    },
+    {
+      "title": "Skill Enhancement Program/Research Internship/On Job Training of 04- week duration- For III-year Students",
+      "event_type": "internship",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-05-20",
+      "end_date": "2027-06-18",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #16: Skill Enhancement Program/Research Internship/On Job Training of 04- week duration- For III-year Students",
+      "s_no": 16
+    },
+    {
+      "title": "Pre-Result Review",
+      "event_type": "result",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-12-17",
+      "end_date": "2026-12-17",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #17: Pre-Result Review",
+      "s_no": 17
+    },
+    {
+      "title": "Pre-Result Review",
+      "event_type": "result",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-05-24",
+      "end_date": "2027-05-24",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #17: Pre-Result Review",
+      "s_no": 17
+    },
+    {
+      "title": "Grade Moderation",
+      "event_type": "result",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-12-28",
+      "end_date": "2026-12-29",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #18: Grade Moderation",
+      "s_no": 18
+    },
+    {
+      "title": "Grade Moderation",
+      "event_type": "result",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-05-26",
+      "end_date": "2027-05-26",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #18: Grade Moderation",
+      "s_no": 18
+    },
+    {
+      "title": "Grade Moderation",
+      "event_type": "result",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-07-22",
+      "end_date": "2027-07-22",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #18: Grade Moderation",
+      "s_no": 18
+    },
+    {
+      "title": "Result Declaration",
+      "event_type": "result",
+      "academic_session": "2026-27-ODD",
+      "semesters": [
+        3,
+        5
+      ],
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Odd Semester (Sem III & V) - Activity #19: Result Declaration",
+      "s_no": 19
+    },
+    {
+      "title": "Result Declaration",
+      "event_type": "result",
+      "academic_session": "2026-27-EVEN",
+      "semesters": [
+        4,
+        6
+      ],
+      "start_date": "2027-05-28",
+      "end_date": "2027-05-28",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Even Semester (Sem IV & VI) - Activity #19: Result Declaration",
+      "s_no": 19
+    },
+    {
+      "title": "Result Declaration",
+      "event_type": "result",
+      "academic_session": "2026-27-SUMMER",
+      "semesters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_date": "2027-07-22",
+      "end_date": "2027-07-22",
+      "suppresses_timetable": false,
+      "description": "Session 2026-27 Summer Semester (Optional) - Activity #19: Result Declaration",
+      "s_no": 19
+    }
+  ],
+  "instructions": [
+    "1. Students must regularly check their attendance status on AMS and also with their class coordinators. Those not having attendance as per the ordinance of MITS- DU, will not be allowed to appear in the examinations.",
+    "2. All the II year students are expected to register for mandatory Novel Engaging Courses (NEC) in III & IV semester and Skill Internship Program (Institute level) at the end of III semester.",
+    "3. From IV semester onwards, students can select “additional courses from NPTEL” to get minor specialization in allied discipline or Honours in chosen track of the parent discipline.",
+    "4. Students are expected to submit all the assignments and appear for all weekly quizzes/final quizzes as a part of continuous assessment.",
+    "5. Students must attend “Additional Classes” conducted by the faculty for clearing the doubts and discussing other academic issues, as per need.",
+    "6. For each student, it is compulsory to appear in Minor evaluations.",
+    "7. Make-up evaluation will be conducted only for those students who could not appear in minor due to some valid/bonafide reason and who have taken prior permission from the Class Coordinators & HoD. Full syllabus will be covered under Make-up evaluation.",
+    "8. Exam fees will be deposited during Registration but it does not mean that the students are eligible to appear in the major evaluations unless the requirements specified in the ordinance of MITS-DU are fulfilled.",
+    "9. Pre-Result Review (Major Evaluations): In case of any discrepancies, the students may apply for review within the specified timelines.",
+    "10. Grade Moderation: Statistical system of grading (relative grading) will be implemented for the award of grades (Except the M.E./ M.Tech Programmes);",
+    "11. Summer Semester is an optional semester, to be conducted at the end of each year to complete the backlog courses (if any) of preceding semesters evaluations and also to makeup/improve the CGPA (only if candidate has failed to score minimum CGPA of 5.0, as per the mandate requirement of the ordinance)",
+    "12. The students whose results are not declared/not eligible for year promotion are required to provisionally register with the undertaking that if they fail, their provisional registration may be treated as cancelled. Attendance during the period of provisional registration will be counted for fulfilling attendance requirements."
+  ]
+}
