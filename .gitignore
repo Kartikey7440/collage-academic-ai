@@ -1,10 +1,30 @@
+# Environment variables
 .env
+*.env
+!.env.example
+
+# Python
 .venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Node & package dependencies
 node_modules/
-.neon/
 dist/
+dist-ssr/
+*.local
+
+# Backups & Scratch
+*.backup.json
+scripts/page_*.png
 *.log
 
+# Editor & OS artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
